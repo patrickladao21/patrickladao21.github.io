@@ -7,6 +7,8 @@
 
 :root {
     --color-primary: #191d2b;
+    --color-secondary: #27ae60;
+    --color-hover: #ff0081;
     --color-dark: #080808;
     --color-pink: #ff004f;
     --color-white: #ffffff;
@@ -19,6 +21,7 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3); //0 on the x-axis, 3px from the y, 15px for the blend and the opacity is 0.3
 }
 
 body {
@@ -85,4 +88,124 @@ body {
         font-weight: 800;
         font-style: italic;
       }      
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; //Inherit the color we have in the body
+  font-family: inherit;
+}
+
+header {
+  height: 100vh; //Fix height of the header
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 18rem; //This is the spacing -- 3rem top and bottom, 18rem left and right
+}
+
+.section {
+  transform: translateY(-100%) scale(0);
+  transition: all .4s ease-in-out;
+  background-color: var(--color-primary);
+}
+
+.sec1 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color:#27ae60;
+}
+
+.sec2 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color: slateblue;
+}
+
+.sec3 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color: rgb(146, 205, 90);
+}
+
+.sec4 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color: slateblue;
+}
+
+.sec5 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color: paleturquoise;
+}
+
+.sec6 {
+  display: none; //This is the background color
+  transform: translateY(0) scale(1);
+  background-color: violet;
+}
+
+.section.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+}
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+
+
+
+//Controls
+.controlls {
+  position: fixed; //This is the parent container
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  .active-btn {
+    background-color: var(--color-hover) !important; //This is the color when you hover to the button of the navigation icons
+    transition: all .4s ease-in-out;
+    i {
+      color: var(--color-white) !important; //This is the color of the navigation icons when you hover over it
+    }
+  }
+  .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-pink);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%; //The border-radius should be 50% to make it rounded
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7rem 0; //The margin is 0.7 rem from to to bottom and 0 from left to right
+    box-shadow: var(--box-shadow-1);
+    i {
+      font-size: 1.2rem;
+      color: var(--color-grey-2); //This is the color of the navigation icons
+      pointer-events: none; //The navigation icons does not react when you click it.
+
+    }
+  }
 }
