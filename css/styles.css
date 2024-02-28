@@ -112,37 +112,31 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #27ae60;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(146, 205, 90);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: paleturquoise;
 }
 
 .sec6 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: violet;
 }
 
 .section.active {
@@ -194,3 +188,20 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
+
+/**Header-content**/
+.header-content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/**Independent components**/

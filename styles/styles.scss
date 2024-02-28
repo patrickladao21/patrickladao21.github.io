@@ -121,37 +121,31 @@ section {
 .sec1 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color:#27ae60;
 }
 
 .sec2 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color: rgb(146, 205, 90);
 }
 
 .sec4 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec5 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color: paleturquoise;
 }
 
 .sec6 {
   display: none; //This is the background color
   transform: translateY(0) scale(1);
-  background-color: violet;
 }
 
 .section.active {
@@ -167,9 +161,6 @@ section {
     transform: translateY(0) scaleY(1);
   }
 }
-
-
-
 
 //Controls
 .controlls {
@@ -209,3 +200,22 @@ section {
     }
   }
 }
+
+/**Header-content**/
+.header-content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  .left-header {
+    display: flex;
+    align-items: center;
+    position: relative; //The image will have a shape behind it.
+  }
+
+}
+
+/**Independent components**/
+
