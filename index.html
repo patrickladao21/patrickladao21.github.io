@@ -83,14 +83,21 @@
                             </p>
 
                             <div class="tab-titles">
-                                <p class="tab-links active-link">Skills</p>
-                                <p class="tab-links">Education</p>
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
                             </div>
-                            <div class="tab-contents">
+                            <div class="tab-contents active-tab" id="skills">
                                 <ul>
-                                    <li><span class="skill">Web Development</span><br><span class="languages">HTML5, CSS, and JavaScript</span></li>
-                                    <li><span class="skill">Web Design</span><br><span class="languages">Designing Web/App interfaces</span></li>
-                                    <li><span class="skill">Wireframing and Prototyping</span><br><span class="languages">Creating visual representations and simulations of digital interfaces</span></li>
+                                    <li><span class="main">Web Development</span><br><span class="sub">HTML5, CSS, and JavaScript</span></li>
+                                    <li><span class="main">Web Design</span><br><span class="sub">Designing Web/App interfaces</span></li>
+                                    <li><span class="main">Wireframing and Prototyping</span><br><span class="sub">Creating visual representations and simulations of digital interfaces</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span class="level">College</span><br><span class="program">Bachelor of Science in Computer Engineering</span><br><span class="school">Polytechnic University of the Philippines</span><br><span class="year">2020-2024</span></li>
+                                    <li><span class="level">Senior High School</span><br><span class="program">Science, Technology, Engineering, and Mathematics</span><br><span class="school">Technological Institute of the Philippines</span><br><span class="year">2018-2020</span><br><span class="honors">With High Honors</span></li>
+                                    <li><span class="level">Junior High School</span><br><span class="school">Sta. Elena High School</span><br><span class="year">2014-2018</span><br><span class="honors">With High Honors</span></li>
                                 </ul>
                             </div>
                         </div>

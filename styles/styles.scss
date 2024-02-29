@@ -411,13 +411,54 @@ section {
   list-style: none;
   margin: 10px 0;
 }
-.skill{
-  color: var(--color-pink);
-  font-size: 14px;
+.tab-contents{
+  display: none;
 }
-.languages{
+.tab-contents.active-tab{
+  display: block; //So that it would be visible
+}
+.main{
+  color: #b54769;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sub{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--color-white);
+}
+.level{
+  color: #b54769;
+  font-size: 12px;
+  font-weight: 600;
+}
+.program{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--color-white);
+}
+.school{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  color: var(--color-white);
+}
+.year{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: var(--color-white);
+}
+.honors{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
   font-style: normal;
   color: var(--color-white);
 }
