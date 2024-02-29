@@ -374,3 +374,20 @@ section {
 .tab-links.active-link::after {
   width: 50%;
 }
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.skill {
+  color: var(--color-pink);
+  font-size: 14px;
+}
+
+.languages {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-white);
+}
