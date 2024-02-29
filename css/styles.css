@@ -255,6 +255,7 @@ section {
   display: flex;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
   z-index: 0; /* Ensure the button content stays above */
 }
 .main-btn .btn-text {
@@ -286,4 +287,18 @@ section {
 }
 .main-btn:hover::before {
   width: 100%; /* Spread out the pink color */
+}
+
+/* Socials Container */
+#socials-container {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+/* Icons */
+.icon {
+  cursor: pointer;
+  height: 3rem;
 }
