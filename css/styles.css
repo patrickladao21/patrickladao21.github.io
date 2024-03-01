@@ -444,3 +444,40 @@ section {
 }
 
 /* End of About Section */
+/* For screens smaller than 768px (standard tablets and below) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  section {
+    padding: 3rem 2rem; /* Adjust padding for sections on smaller screens */
+  }
+  .header-content {
+    grid-template-columns: 1fr; /* Change grid layout to single column */
+    padding-right: 2rem; /* Adjust right padding for smaller screens */
+  }
+  .about-col-1 {
+    flex-basis: 100%; /* Make image column take full width */
+    margin-bottom: 2rem; /* Add some space between image and text */
+  }
+  .about-col-2 {
+    position: static; /* Remove absolute positioning */
+    max-width: 100%; /* Ensure text column takes full width */
+    padding-right: 0; /* Remove right padding */
+  }
+  .summary {
+    padding-right: 0; /* Remove padding on summary text */
+  }
+}
+/* For screens smaller than 480px (standard smartphones) */
+@media (max-width: 480px) {
+  .header-content {
+    padding-right: 1rem; /* Further reduce right padding for smaller screens */
+  }
+  .about-col-1 img {
+    border-radius: 0; /* Remove border radius on image */
+  }
+  .sub-title {
+    font-size: 40px; /* Decrease font size for smaller screens */
+  }
+}
