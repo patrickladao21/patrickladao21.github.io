@@ -304,13 +304,12 @@ section {
   height: 3rem;
 }
 
-/* About */
-/* About */
+/* Start of About Section*/
 #about {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
-  padding: 80px 1rem;
+  padding: 80PX 1REM;
   color: var(--color-white);
 }
 
@@ -331,6 +330,10 @@ section {
 
 .about-col-2 {
   flex-basis: 60%;
+  position: absolute;
+  top: 3%; /* Position it at the top of the parent container */
+  right: 5%; /* Move it to the right */
+  max-width: 55%; /* Set max-width to ensure responsiveness */
 }
 
 .sub-title {
@@ -377,7 +380,7 @@ section {
 
 .tab-contents ul li {
   list-style: none;
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .tab-contents {
@@ -439,3 +442,5 @@ section {
   font-style: normal;
   color: var(--color-white);
 }
+
+/* End of About Section */
