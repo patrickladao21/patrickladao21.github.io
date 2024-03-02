@@ -26,7 +26,7 @@
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span class="highlight">Ira Clariz O. Lim.</span>
+                    Hi, I'm <span class="highlight" id="auto-input"></span>
                 </h1>
                 <p>
                     An aspiring Front-End Developer.
@@ -73,7 +73,9 @@
                             
                         </div>
                         <div class="about-col-2">
-                            <h1 class="sub-title">About Me</h1>
+                            <div class="main-title">
+                                <h2>About <span>Me<span class="bg-text">About Me</span></span></h2> 
+                            </div>
                             <p class="summary">A highly motivated Computer Engineering, eager to leverage my diverse skill set and
                                 amplify my expertise as a frontend developer or UI/UX designer. With valuable
                                 internship experience in both roles, I have honed my abilities to create captivating
@@ -106,7 +108,106 @@
             </div>
         </section>
         <!--End of About Section-->
-        <section class="section sec3 experience" id="experience"></section>
+
+        <!--Start of Experience Section-->
+        <section class="section sec3" id="experience">
+            <div class="experiences-content">
+                <div class="main-title">
+                    <h2>My <span>Experiences</span><span class="bg-text">My Experiences</span></h2>
+                </div>
+                <div class="experiences">
+                    <div class="experience">
+                        <img src="img/experience-telus.jpg" alt="">
+                        <div class="experience-text">
+                            <h4>
+                                Personalized Internet Ads Assessor
+                            </h4>
+                            <h5>
+                                Telus International
+                            </h5>
+                            <h5 class="work-year">
+                                October 2023 - Present
+                            </h5>
+                            <p>
+                                As a Personalized Internet Ads Assessor, I analyze and evaluate the effectiveness of personalized internet ads, ensuring their relevance and alignment with user preferences and behaviors. 
+                                Additionally, I rate these ads based on user satisfaction to gauge their impact and optimize their performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="img/experience-intelliseven.jpg" alt="">
+                        <div class="experience-text">
+                            <h4>
+                                Front-End Developer, UI/UX Designer, & Quality Assurance Tester
+                            </h4>
+                            <h5>
+                                Intelliseven Technology Solutions Inc.
+                            </h5>
+                            <h5 class="work-year">
+                                August 2023 - October 2023
+                            </h5>
+                            <p>
+                                In my role, I design intuitive interfaces with wireframes and prototypes for usability and accessibility, utilizing HTML, CSS, and JavaScript for seamless integration. 
+                                I conduct thorough testing, identifying and reporting bugs to uphold software quality and enhance user satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="img/experience-remotasks.jpg" alt="">
+                        <div class="experience-text">
+                            <h4>
+                                Web Annotator
+                            </h4>
+                            <h5>
+                                Remotasks
+                            </h5>
+                            <h5 class="work-year">
+                                October 2021 - June 2023
+                            </h5>
+                            <p>
+                                As a Web Annotator, my responsibilities include data labeling and transcription, as well as annotating various forms of content such as images, texts, videos, and audio files.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="img/experience-gjax.jpg" alt="">
+                        <div class="experience-text">
+                            <h4>
+                                IT Technician
+                            </h4>
+                            <h5>
+                                GJAX Computer Trading
+                            </h5>
+                            <h5 class="work-year">
+                                August 2022 - September 2022
+                            </h5>
+                            <p>
+                                As an IT Technician, I handle hardware components and repair and assemble computers and laptops. 
+                                I troubleshoot issues and ensure seamless equipment integration, conducting assessments and implementing solutions as needed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <img src="img/experience-pldt.jpg" alt="">
+                        <div class="experience-text">
+                            <h4>
+                                Intern
+                            </h4>
+                            <h5>
+                                PLDT Fiber Home
+                            </h5>
+                            <h5 class="work-year">
+                                November 2019 - March 2020
+                            </h5>
+                            <p>
+                                As an Intern, I handle sorting, sealing, and printing/photocopying tasks efficiently to support organizational operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Experience Section-->
         <section class="section sec4 services" id="services"></section>
         <section class="section sec5 portfolio" id="portfolio"></section>
         <section class="section sec6 contact" id="contact"></section>
@@ -133,6 +234,9 @@
         </div>
     </div>
 
+    <!--Typed JS (for typing effect)-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--Main JavaScript-->
     <script src="app.js"></script>
 </body>
 </html>

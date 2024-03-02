@@ -305,6 +305,34 @@ section {
   height: 3rem;
 }
 
+/* Title of each section */
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.main-title h2 span {
+  color: var(--color-pink);
+}
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5.5rem;
+  white-space: nowrap;
+}
+
+/* End for the title of each sections */
 /* Start of About Section*/
 #about {
   font-family: "Poppins", sans-serif;
@@ -338,7 +366,7 @@ section {
   flex-basis: 60%; /* Adjust flex-basis */
   top: 3%;
   max-width: 100%; /* Ensure text column takes full width */
-  margin-top: -9rem; /* Add margin to separate text from image */
+  margin-top: -8rem; /* Add margin to separate text from image */
 }
 
 .sub-title {
@@ -349,10 +377,12 @@ section {
 
 .summary {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   text-align: left;
   padding-right: 8rem;
+  text-align: justify;
 }
 
 .tab-titles {
@@ -449,6 +479,67 @@ section {
 }
 
 /* End of About Section */
+/* Experiences */
+.experiences {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.experiences .experience {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+.experiences .experience img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.experiences .experience .experience-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-pink);
+}
+.experiences .experience .experience-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.experiences .experience .experience-text h4:hover {
+  color: #b54769;
+}
+.experiences .experience .experience-text .work-year {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2rem;
+}
+.experiences .experience .experience-text p {
+  font-size: 13px;
+  color: var(--color-grey-2);
+  line-height: 1rem;
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+
+/* End of Experiences */
 /* Scrollbar for the Header Section */
 /* Hide scrollbar by default */
 .header::-webkit-scrollbar {
@@ -584,6 +675,7 @@ body::-webkit-scrollbar {
   }
   .summary {
     font-size: 1rem;
+    text-align: justify;
   }
 }
 /* For screens smaller than 480px (standard smartphones) */

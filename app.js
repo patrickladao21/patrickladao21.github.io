@@ -54,5 +54,15 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+ //Typing effect on the header section
+ let typed = new Typed('#auto-input', {
+    strings: ['Ira Clariz O. Lim'],
+    typeSpeed: 100,
+    backSpeed: 90,
+    backDelay: 100,
+    loop: true
+})
+
+
 
 
