@@ -25,6 +25,7 @@
 }
 
 body {
+  overflow-y: auto;
   background-color: var(--color-primary);
   font-size: 1.1rem;
   color: var(--color-white);
@@ -91,7 +92,7 @@ a {
 header {
   height: 100vh;
   color: var(--color-white);
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 section {
@@ -320,7 +321,12 @@ section {
 }
 
 .about-col-1 {
-  flex-basis: 35%;
+  flex-basis: 35%; /* Set full width for smaller screens */
+  margin-bottom: 2rem; /* Add margin to separate image from text */
+}
+.about-col-1 img {
+  width: 100%; /* Make image fill the entire width of its container */
+  border-radius: 15px; /* Add border radius to the image */
 }
 
 .about-col-1 img {
@@ -329,11 +335,10 @@ section {
 }
 
 .about-col-2 {
-  flex-basis: 60%;
-  position: absolute;
-  top: 3%; /* Position it at the top of the parent container */
-  right: 5%; /* Move it to the right */
-  max-width: 55%; /* Set max-width to ensure responsiveness */
+  flex-basis: 60%; /* Adjust flex-basis */
+  top: 3%;
+  max-width: 100%; /* Ensure text column takes full width */
+  margin-top: -9rem; /* Add margin to separate text from image */
 }
 
 .sub-title {
@@ -444,34 +449,150 @@ section {
 }
 
 /* End of About Section */
+/* Scrollbar for the Header Section */
+/* Hide scrollbar by default */
+.header::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* For screens smaller than or equal to 768px (cellphones and tablets) */
+@media (max-width: 768px) {
+  /* Show scrollbar */
+  .header::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  /* Style scrollbar track */
+  .header::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  /* Style scrollbar thumb */
+  .header::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  /* Style scrollbar thumb on hover */
+  .header::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+/* End of Scrollbar for the Header Section */
+/*Scrollbar for the About Section */
+/* Hide scrollbar by default */
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  /* Show scrollbar */
+  body::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  /* Style scrollbar track */
+  body::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  /* Style scrollbar thumb */
+  body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  /* Style scrollbar thumb on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+/*End of the Scrollbar for the About Section */
+/* Header Section */
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+  }
+  .left-header .image {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right-header {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .name {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .right-header > p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+}
+/* End of the Header Section */
+/* About Section */
 /* For screens smaller than 768px (standard tablets and below) */
 @media (max-width: 768px) {
+  .header-content {
+    padding: 3rem 1rem; /* Adjust padding for header content */
+  }
+  .left-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .left-header .image {
+    border-radius: var(--br-sm-2);
+    height: 90%;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-black);
+    transition: all 0.4s ease-in-out;
+  }
+  .left-header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+  }
+  .about-col-1 {
+    flex-basis: 100%; /* Set full width for smaller screens */
+    margin-bottom: 2rem; /* Add margin to separate image from text */
+  }
+  .about-col-1 img {
+    width: 100%; /* Make image fill the entire width of its container */
+    border-radius: var(--br-sm-2);
+  }
   .about-col-2 {
-    position: relative; /* Change position to relative */
+    flex-basis: 100%; /* Set full width for smaller screens */
     max-width: 100%; /* Ensure text column takes full width */
-    margin-top: 2rem; /* Add margin to separate text from image */
+    margin-top: 0; /* Add margin to separate text from image */
+  }
+  .sub-title {
+    font-size: 3rem;
+    margin-top: 1rem;
   }
   .summary {
-    padding-right: 0; /* Remove padding on summary text */
+    font-size: 1rem;
   }
 }
 /* For screens smaller than 480px (standard smartphones) */
 @media (max-width: 480px) {
-  .header-content {
-    padding: 3rem 1rem; /* Adjust padding for header content */
-  }
-  .about-col-1 img {
-    border-radius: 0; /* Remove border radius on image */
-  }
   .sub-title {
     font-size: 40px; /* Decrease font size for smaller screens */
   }
   .right-header {
     padding-right: 0; /* Remove right padding on right-header */
   }
-  .about-col-2 {
-    position: static; /* Reset position to static */
-    max-width: 100%; /* Ensure text column takes full width */
-    margin-top: 2rem; /* Add margin to separate text from image */
-  }
 }
+/*End of the About Section */

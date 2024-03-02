@@ -25,6 +25,7 @@
 }
 
 body {
+    overflow-y: auto; // Enable vertical scrolling
     background-color: var(--color-primary);
     font-size: 1.1rem;
     color: var(--color-white);
@@ -100,7 +101,7 @@ a {
 header {
   height: 100vh; //Fix height of the header
   color: var(--color-white);
-  overflow: hidden;
+  overflow-y: auto; // Enable vertical scrolling
 }
 
 section {
@@ -355,20 +356,36 @@ section {
   flex-wrap: wrap;
 }
 
-.about-col-1{
-  flex-basis: 35%;
+//.about-col-1{
+//  flex-basis: 35%;
+//}
+.about-col-1 {
+  flex-basis: 35%; /* Set full width for smaller screens */
+  margin-bottom: 2rem; /* Add margin to separate image from text */
+  img {
+    width: 100%; /* Make image fill the entire width of its container */
+    border-radius: 15px; /* Add border radius to the image */
+  }
 }
+
 .about-col-1 img{
   width: 100%;
   border-radius: 15px;
   //filter: grayscale(50%);
 }
-.about-col-2{
-  flex-basis: 60%;
-  position: absolute;
-  top: 3%; /* Position it at the top of the parent container */
-  right: 5%; /* Move it to the right */
-  max-width: 55%; /* Set max-width to ensure responsiveness */
+//.about-col-2{
+//  flex-basis: 60%;
+//  position: absolute;
+//  top: 3%; /* Position it at the top of the parent container */
+//  right: 5%; /* Move it to the right */
+//  max-width: 55%; /* Set max-width to ensure responsiveness */
+//}
+
+.about-col-2 {
+  flex-basis: 60%; /* Adjust flex-basis */
+  top: 3%;
+  max-width: 100%; /* Ensure text column takes full width */
+  margin-top: -9rem; /* Add margin to separate text from image */
 }
 
 .sub-title{
@@ -467,43 +484,180 @@ section {
 }
 /* End of About Section */
 
-/* For screens smaller than 768px (standard tablets and below) */
+/* Scrollbar for the Header Section */
+/* Hide scrollbar by default */
+.header::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* For screens smaller than or equal to 768px (cellphones and tablets) */
 @media (max-width: 768px) {
-  .about-col-2 {
-      position: relative; /* Change position to relative */
-      max-width: 100%; /* Ensure text column takes full width */
-      margin-top: 2rem; /* Add margin to separate text from image */
+  /* Show scrollbar */
+  .header::-webkit-scrollbar {
+    width: 8px; // Set width to your desired width
+    background: transparent; // Set background color to transparent
   }
 
-  .summary {
-      padding-right: 0; /* Remove padding on summary text */
+  /* Style scrollbar track */
+  .header::-webkit-scrollbar-track {
+    background: transparent; // Set background color to transparent
+  }
+
+  /* Style scrollbar thumb */
+  .header::-webkit-scrollbar-thumb {
+    background: #888; // Set color of the scrollbar thumb
+    border-radius: 4px; // Set border radius
+  }
+
+  /* Style scrollbar thumb on hover */
+  .header::-webkit-scrollbar-thumb:hover {
+    background: #555; // Set color of the scrollbar thumb on hover
+  }
+}
+/* End of Scrollbar for the Header Section */
+
+/*Scrollbar for the About Section */
+/* Hide scrollbar by default */
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+  width: 0; // Set width to 0
+  background: transparent; // Set background color to transparent
+}
+
+// For screens smaller than or equal to 768px (cellphones and tablets)
+@media (max-width: 768px) {
+  /* Show scrollbar */
+  body::-webkit-scrollbar {
+    width: 8px; // Set width to your desired width
+    background: transparent; // Set background color to transparent
+  }
+
+  /* Style scrollbar track */
+  body::-webkit-scrollbar-track {
+    background: transparent; // Set background color to transparent
+  }
+
+  /* Style scrollbar thumb */
+  body::-webkit-scrollbar-thumb {
+    background: #888; // Set color of the scrollbar thumb
+    border-radius: 4px; // Set border radius
+  }
+
+  /* Style scrollbar thumb on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555; // Set color of the scrollbar thumb on hover
+  }
+}
+/*End of the Scrollbar for the About Section */
+
+/* Header Section */
+// For screens smaller than or equal to 768px (cellphones and tablets)
+@media (max-width: 768px) {
+  .header-content {
+    grid-template-columns: 1fr; // Change grid to single column layout
+    padding: 3rem 1rem; // Adjust padding for header content
+  }
+
+  .left-header {
+    .image {
+      width: 100%; // Make the image fill the entire width
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .right-header {
+    padding-right: 1rem; // Adjust padding for right header
+    padding-top: 1rem; // Add top padding for better spacing
+    width: 100%; // Ensure the content takes full width
+    text-align: center; // Center-align the content
+  }
+
+  .name {
+    font-size: 0.7rem; // Adjust font size for smaller screens
+    margin-bottom: 0.5rem; // Add margin to bottom for better spacing
+  }
+
+  .right-header > p {
+    font-size: 0.9rem; // Adjust font size for smaller screens
+    margin-bottom: 1rem; // Add margin to bottom for better spacing
+  }
+}
+/* End of the Header Section */
+
+
+
+/* About Section */
+/* For screens smaller than 768px (standard tablets and below) */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 3rem 1rem; /* Adjust padding for header content */
+  }
+
+  .left-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .image {
+      border-radius: var(--br-sm-2);
+      height: 90%;
+      width: 68%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--color-black);
+      transition: all .4s ease-in-out;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all .4s ease-in-out;
+      }
+    }
+  }
+
+  .about-col-1 {
+    flex-basis: 100%; /* Set full width for smaller screens */
+    margin-bottom: 2rem; /* Add margin to separate image from text */
+    img {
+      width: 100%; /* Make image fill the entire width of its container */
+      border-radius: var(--br-sm-2);
+    }
+  }
+
+  .about-col-2 {
+    flex-basis: 100%; /* Set full width for smaller screens */
+    max-width: 100%; /* Ensure text column takes full width */
+    margin-top: 0; /* Add margin to separate text from image */
+  }
+  .sub-title{
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .summary{
+    font-size: 1rem;
   }
 }
 
 /* For screens smaller than 480px (standard smartphones) */
 @media (max-width: 480px) {
-  .header-content {
-      padding: 3rem 1rem; /* Adjust padding for header content */
-  }
-
-  .about-col-1 img {
-      border-radius: 0; /* Remove border radius on image */
-  }
-
   .sub-title {
-      font-size: 40px; /* Decrease font size for smaller screens */
+    font-size: 40px; /* Decrease font size for smaller screens */
   }
 
   .right-header {
-      padding-right: 0; /* Remove right padding on right-header */
-  }
-
-  .about-col-2 {
-      position: static; /* Reset position to static */
-      max-width: 100%; /* Ensure text column takes full width */
-      margin-top: 2rem; /* Add margin to separate text from image */
+    padding-right: 0; /* Remove right padding on right-header */
   }
 }
+/*End of the About Section */
+
+
+
 
 
 
