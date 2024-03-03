@@ -545,6 +545,10 @@ section {
   min-height: 100vh;
 }
 
+.portfolio-item-inner {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
 .portfolio-section .main-title {
   margin-bottom: 40px;
 }
@@ -554,6 +558,7 @@ section {
   flex: 0 0 100%;
   max-width: 100%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .portfolio-section .filter-item {
@@ -574,7 +579,11 @@ section {
 }
 
 .portfolio-section .filter-item.active {
-  color: var(--color-pink);
+  color: var(--color-white);
+}
+
+.portfolio-section .portfolio-item {
+  flex: 0 0 33.33%;
 }
 
 /* End of Portfolio Section */
