@@ -577,7 +577,7 @@ section {
 
 /* Portfolio */
 .portfolio-section{
-  //padding: 80px 0 80px;
+  padding: 80px 100px 80px;
   min-height: 100vh;
 }
 .portfolio-item-inner {
@@ -614,6 +614,78 @@ section {
 } 
 .portfolio-section .portfolio-item{
   flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+}
+
+.portfolio-section .portfolio-item-details{
+  display: none;
+}
+.portfolio-items {
+  //align-items: center;
+  //display: grid;
+  //grid-template-columns: repeat(3, 1fr);
+  //grid-gap: 0.7rem;
+  //margin-top: 3rem;
+  //display: flex; /* Use flexbox to align items in a row */
+  //justify-content: space-between; /* Distribute items evenly along the main axis */
+  //margin-top: 3rem;
+
+  .portfolio-item {
+    //width: calc(25% - 20px); /* Adjust width to fit three items with margins */
+    //gap:10rem;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    //display: flex;
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-gap: 5rem;
+    //margin-top: 3rem;
+
+    .portfolio-item-inner {
+      width: 390px; /* Set width to fit the width of the images */
+      //width: calc(100% - 20px); /* Adjust width to fit three items with margins */
+      position: relative;
+      background-color: var(--color-grey-5);
+      border-radius: 5px;
+      box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+      transition: all .4s ease-in-out;
+      padding: 15px;
+      //border-radius: 8px;
+      //transition: all 0.3s ease;
+      //box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .portfolio-item-img img {
+      border-radius: 5px;
+      width: 100%;
+      height: 200px; /* Fixed height for consistent box height */
+      object-fit: cover;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      transition: all .4s ease-in-out;
+    }
+  }
+}
+.portfolio-section .portfolio-item-inner{
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.portfolio-section .portfolio-item-img img{
+  border-radius: 5px;
+  width: 100%;
+}
+.portfolio-section .portfolio-item-img .view-project{
+  display: none;
+}
+.portfolio-section .portfolio-item-inner p{
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: var(--color-white);
+  text-transform: capitalize;
 }
 /* End of Portfolio Section */
 
