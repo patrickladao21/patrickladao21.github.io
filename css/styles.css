@@ -587,6 +587,8 @@ section {
   flex: 0 0 33.33%;
   max-width: 33.33%;
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-section .portfolio-item-details {
@@ -623,6 +625,7 @@ section {
   padding: 15px;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
 .portfolio-section .portfolio-item-img img {
@@ -631,7 +634,11 @@ section {
 }
 
 .portfolio-section .portfolio-item-img .view-project {
-  display: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #b54769;
+  transition: all 0.3s ease;
 }
 
 .portfolio-section .portfolio-item-inner p {
