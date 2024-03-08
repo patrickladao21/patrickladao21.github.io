@@ -734,10 +734,14 @@ section {
 .portfolio-popup .pp-close {
   position: absolute;
   right: 0;
-  background-color: blue;
+  border-radius: 50%;
   height: 40px;
   width: 40px;
   top: 15px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+  color: var(--color-hover);
 }
 
 .portfolio-popup .pp-counter {
