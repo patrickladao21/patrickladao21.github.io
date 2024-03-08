@@ -751,8 +751,9 @@ section {
 }
 
 .portfolio-popup .pp-counter {
+  font-family: "Poppins", sans-serif;
   position: absolute;
-  right: 0;
+  right: 10px;
   height: 40px;
   line-height: 40px;
   bottom: 5px;
