@@ -684,7 +684,7 @@ section {
 }
 
 .portfolio-popup .pp-img {
-  max-width: 700px;
+  max-width: 100%;
   width: auto;
   height: auto;
   padding: 10px;
