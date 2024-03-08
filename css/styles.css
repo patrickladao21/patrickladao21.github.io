@@ -742,6 +742,12 @@ section {
   line-height: 35px;
   font-size: 35px;
   color: var(--color-hover);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-popup .pp-close:after {
+  border-radius: 50%;
 }
 
 .portfolio-popup .pp-counter {
@@ -750,6 +756,8 @@ section {
   height: 40px;
   line-height: 40px;
   bottom: 5px;
+  font-size: 16px;
+  color: var(--color-white);
 }
 
 /* End of Portfolio Popup */
