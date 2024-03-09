@@ -780,7 +780,7 @@ section {
 .portfolio-popup .pp-project-details-btn:focus::after {
   width: 10%; /* Slightly increase width on hover */
 }
-/* Media Queries */
+/* Start of media Queries for the .pp-project-details-btn  */
 @media screen and (max-width: 768px) {
   .portfolio-popup .pp-project-details-btn::after {
   left: 10px;
@@ -800,7 +800,7 @@ section {
     width: 32%; /* Slightly increase width on hover */
   }
 }
-
+/* End of media Queries for the .pp-project-details-btn  */
 //.portfolio-popup .pp-project-details-btn i{
 //margin-left: 4px;
 //}
@@ -821,10 +821,17 @@ section {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.portfolio-popup .pp-close:after{
-  border-radius: 50%;
-
+.portfolio-popup .pp-close:hover {
+  color: var(--color-pink); /* Change color to pink on hover */
 }
+
+.portfolio-popup .pp-close:after {
+  border-radius: 50%;
+}
+//.portfolio-popup .pp-close:after{
+  //border-radius: 50%;
+
+//}
 .portfolio-popup .pp-counter{
   font-family: 'Poppins', sans-serif;
   position: absolute;

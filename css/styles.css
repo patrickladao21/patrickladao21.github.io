@@ -739,7 +739,7 @@ section {
   width: 10%; /* Slightly increase width on hover */
 }
 
-/* Media Queries */
+/* Start of media Queries for the .pp-project-details-btn  */
 @media screen and (max-width: 768px) {
   .portfolio-popup .pp-project-details-btn::after {
     left: 10px;
@@ -758,6 +758,7 @@ section {
     width: 32%; /* Slightly increase width on hover */
   }
 }
+/* End of media Queries for the .pp-project-details-btn  */
 .portfolio-popup .pp-close {
   position: absolute;
   right: 0;
@@ -771,6 +772,10 @@ section {
   color: var(--color-whote);
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.portfolio-popup .pp-close:hover {
+  color: var(--color-pink); /* Change color to pink on hover */
 }
 
 .portfolio-popup .pp-close:after {
