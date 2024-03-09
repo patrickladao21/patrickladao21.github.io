@@ -688,6 +688,7 @@ section {
   width: auto;
   height: auto;
   padding: 10px;
+  margin-top: -40px;
   border-radius: 5px;
 }
 
@@ -699,12 +700,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
 }
 
 .portfolio-popup .pp-main-inner {
   background-color: var(--color-grey-5);
   padding: 70px 0 50px;
   position: relative;
+  overflow-y: auto; /* Add this line */
 }
 
 .portfolio-popup .pp-project-details-btn {
@@ -791,6 +795,34 @@ section {
   bottom: 5px;
   font-size: 16px;
   color: var(--color-white);
+}
+
+.portfolio-popup .pp-prev,
+.portfolio-popup .pp-next {
+  position: fixed;
+  top: 350px;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.portfolio-popup .pp-prev i,
+.portfolio-popup .pp-next i {
+  line-height: 40px;
+}
+
+.portfolio-popup .pp-prev i {
+  transform: rotate(180deg);
+}
+
+.portfolio-popup .pp-prev {
+  left: 15px;
+}
+
+.portfolio-popup .pp-next {
+  right: 15px;
 }
 
 /* End of Portfolio Popup */
