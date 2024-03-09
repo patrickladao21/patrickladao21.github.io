@@ -708,29 +708,56 @@ section {
 }
 
 .portfolio-popup .pp-project-details-btn {
-  position: absolute;
+  position: relative;
   left: 0;
   border-radius: 30px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-hover);
-  top: 15px;
+  color: var(--color-white);
+  top: -55px;
   cursor: pointer;
-  padding: 0 15px;
+  padding: 5px 15px;
   height: 40px;
   line-height: 40px;
   transition: all 0.3s ease;
 }
 
-.portfolio-popup .pp-project-details-btn i {
-  margin-left: 4px;
+.portfolio-popup .pp-project-details-btn::after {
+  content: "";
+  width: 3%; /* Set initial width */
+  height: 3px;
+  background: var(--color-pink);
+  position: absolute;
+  bottom: -3px;
+  left: 17px;
+  transition: width 0.5s ease; /* Transition only width */
 }
 
-.portfolio-popup .pp-project-details-btn:after {
-  border-radius: 30px;
+.portfolio-popup .pp-project-details-btn:hover::after,
+.portfolio-popup .pp-project-details-btn:focus::after {
+  width: 10%; /* Slightly increase width on hover */
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .portfolio-popup .pp-project-details-btn::after {
+    left: 10px;
+  }
+  .portfolio-popup .pp-project-details-btn:hover::after,
+  .portfolio-popup .pp-project-details-btn:focus::after {
+    width: 28%; /* Slightly increase width on hover */
+  }
+}
+@media screen and (max-width: 576px) {
+  .portfolio-popup .pp-project-details-btn::after {
+    left: 15px;
+  }
+  .portfolio-popup .pp-project-details-btn:hover::after,
+  .portfolio-popup .pp-project-details-btn:focus::after {
+    width: 32%; /* Slightly increase width on hover */
+  }
+}
 .portfolio-popup .pp-close {
   position: absolute;
   right: 0;
@@ -741,7 +768,7 @@ section {
   text-align: center;
   line-height: 35px;
   font-size: 35px;
-  color: var(--color-hover);
+  color: var(--color-whote);
   cursor: pointer;
   transition: all 0.3s ease;
 }
