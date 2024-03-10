@@ -757,7 +757,7 @@ section {
 .portfolio-popup .pp-title p{
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-grey-1);
   margin:0 0 15px;
   border-bottom: 2px solid var(--color-grey-4);
   padding-bottom: 10px;
@@ -778,6 +778,12 @@ section {
   max-width: 95%;
   padding: 0 15px;
 }
+.portfolio-popup .description p{
+  font-size: 16px;
+  color: var(--color-grey-1);
+  line-height: 26px;
+  margin: 0;
+}
 .portfolio-popup .info{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -785,6 +791,17 @@ section {
   //flex: 0 0 35%;
   //max-width: 35%;
   padding: 0 15px;
+}
+.portfolio-popup .info ul li{
+  display: block;
+  color: var(--color-grey-1);
+  margin-bottom:10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.portfolio-popup .info ul li:last-child{
+  margin-bottom:0;
+
 }
 .portfolio-popup .align-description-info {
   display: grid;
