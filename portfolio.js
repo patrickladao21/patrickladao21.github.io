@@ -16,7 +16,10 @@
     filterContainer.addEventListener("click", (event)=>{
         if(event.target.classList.contains("filter-item") &&
         !event.target.classList.contains("active")){
-            console.log("true");
+            //deactivate existing active 'filter-item'
+            filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
+            //activate new 'filter-item'
+            event.target.classList.add("active", "outer-shadow");
         }
     })
 
