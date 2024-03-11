@@ -573,7 +573,6 @@ section {
   border-radius: 30px;
   cursor: pointer;
   font-weight: 400;
-  color: var(--color-hover);
   text-transform: capitalize;
   font-size: 16px;
   transition: all 0.3s ease;
@@ -581,6 +580,7 @@ section {
 
 .portfolio-section .filter-item:hover:not(.active) {
   opacity: 0.6;
+  color: var(--color-hover);
 }
 
 .portfolio-section .filter-item.active {
