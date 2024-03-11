@@ -14,7 +14,10 @@
 
     /* Filter Portfolio Items */
     filterContainer.addEventListener("click", (event)=>{
-        console.log(event.target);
+        if(event.target.classList.contains("filter-item") &&
+        !event.target.classList.contains("active")){
+            console.log("true");
+        }
     })
 
 })();
