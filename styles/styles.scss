@@ -725,12 +725,13 @@ section {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  //height: 100%;
+  min-height: 100vh;
   z-index: 1000;
   overflow-y: auto;
   max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
-  opacity:0; /* Remove this to see the popup */
-  visibility: hidden; /* Remove this to see the popup */
+  //opacity:0; /* Remove this to see the popup */
+  //visibility: hidden; /* Remove this to see the popup */
 }
 .portfolio-popup .pp-details{
   max-width: 1350px;
@@ -738,7 +739,7 @@ section {
   width: calc(85% + 30px);
   margin-left: 7.5rem;
   margin-bottom: -5rem;
-  max-height: 50px;
+  max-height: 55px; //You can adjust this
   overflow: hidden;
   opacity: 0;
   //margin: auto;
