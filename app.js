@@ -3,6 +3,7 @@ const sectBtns = document.querySelectorAll('.controlls'); //Parent button
 const sectBtn = document.querySelectorAll('.control'); //Child button
 const allSections = document.querySelector('.main-content'); //This is the body
 
+
 function PageTransitions() {
     //Button click active class
     for(let i = 0; i < sectBtn.length; i++){
@@ -62,6 +63,10 @@ function opentab(tabname){
     backDelay: 100,
     loop: true
 })
+
+
+
+
 
 
 
