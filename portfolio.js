@@ -21,7 +21,16 @@
             //activate new 'filter-item'
             event.target.classList.add("active", "outer-shadow");
             const target = event.target.getAttribute("data-target");
-            console.log(target);
+            portfolioItems.forEach((item) =>{
+                if(target === item.getAttribute("data-category")){
+                    item.classList.remove("hide");
+                    item.classList.add("show");
+                }
+                else{
+                    item.classList.remove("show");
+                    item.classList.add("hide");
+                }
+            })
         }
     })
     
