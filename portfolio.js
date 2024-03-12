@@ -21,6 +21,7 @@
             //activate new 'filter-item'
             event.target.classList.add("active", "outer-shadow");
             const target = event.target.getAttribute("data-target");
+            console.log(target);
         }
     })
     
