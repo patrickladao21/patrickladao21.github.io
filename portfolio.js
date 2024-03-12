@@ -20,8 +20,10 @@
             filterContainer.querySelector(".active").classList.remove("outer-shadow", "active");
             //activate new 'filter-item'
             event.target.classList.add("active", "outer-shadow");
+            const target = event.target.getAttribute("data-target");
         }
     })
+    
 
 })();
 /* End of Portfolio Filter and Popup */
