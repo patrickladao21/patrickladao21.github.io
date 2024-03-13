@@ -431,7 +431,9 @@ section {
   padding-right: 8rem;
   text-align: justify; //Justify the content
 }
-
+.about-contents{
+  margin-top:3rem; //You can adjust this value depending on what you want
+}
 .tab-titles{
   display: flex;
   margin: 20px 0 40px;

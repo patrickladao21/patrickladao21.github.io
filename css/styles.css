@@ -386,6 +386,10 @@ section {
   text-align: justify;
 }
 
+.about-contents {
+  margin-top: 3rem;
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
