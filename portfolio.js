@@ -35,7 +35,10 @@
     })
 
     portfolioItemsContainer.addEventListener("click", (event) =>{
-        console.log(event.target)
+        if(event.target.closest(".portfolio-item-inner")){
+            const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
+            console.log(portfolioItem);
+        }
     })
 
 })();
