@@ -1,3 +1,6 @@
+function bodyScrollingToggle(){
+    document.body.classList.toggle("stop-scrolling");
+}
 /* Start of Portfolio Section */
 /* Start of Portfolio Filter and Popup */
 (() => {
@@ -43,9 +46,29 @@
             itemIndex = portfolioItems.indexOf(portfolioItem);
             //console.log(itemIndex);
             screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
-            console.log(screenshots)
+            //convert screenshots into array
+            screenshots = screenshots.split(",");
+            slideIndex = 0;
+            popupToggle();
+            popupSlideshow();
         }
-    });
+    })
+
+    closeBtn.addEventListener("click", () =>{
+        popupToggle();
+    })
+
+    function popupToggle(){
+        popup.classList.toggle("open");
+        bodyScrollingToggle();
+    }
+
+    function popupSlideshow(){
+        const imgSrc = screenshots[slideIndex];
+        const popupImg = popup.querySelector(".pp-img");
+        /* activate loader until the popupImg loaded */
+        popupImg.src = imgSrc;
+    }
 
 })();
 /* End of Portfolio Filter and Popup */

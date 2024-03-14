@@ -9,6 +9,7 @@
     --color-primary: #191d2b;
     --color-secondary: #27ae60;
     --color-hover: #ff0081;
+    --bg-opacity: rgba(255,255,255,0.5);
     --color-dark: #080808;
     --color-pink: #ff004f;
     --color-white: #ffffff;
@@ -90,7 +91,9 @@ body {
         font-style: italic;
       }      
 }
-
+body.stop-scrolling{
+  overflow-y: hidden;
+}
 a {
   display: inline-block;
   text-decoration: none;
@@ -746,11 +749,45 @@ section {
   height: 100%;
   min-height: 100vh;
   z-index: 1000;
-  overflow-y: auto;
+  overflow-y: scroll;
   max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
-  opacity:0; /* Remove this to see the popup */
-  visibility: hidden; /* Remove this to see the popup */
+  //opacity:0; /* Remove this to see the popup */
+  //visibility: hidden; /* Remove this to see the popup */
+  transition: all 0.3s ease;
 }
+.portfolio-popup.open{
+  visibility: visible;
+  opacity: 1;
+} 
+.portfolio-popup .pp-loader{
+  position: fixed;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  z-index: 1005;
+  background-color: var(--bg-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-popup .pp-loader div{
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--color-pink);
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 .portfolio-popup .pp-details{
   max-width: 1350px;
   //width: calc(82% + 30px);
@@ -875,6 +912,7 @@ section {
   position: relative;
   overflow-y: auto; /* Add this line */
   margin:auto;
+  border-radius: 7px;
   //width: 500%; /* Set a percentage width or any other desired value */
   //margin: auto;
 }
