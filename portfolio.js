@@ -67,8 +67,25 @@ function bodyScrollingToggle(){
         const imgSrc = screenshots[slideIndex];
         const popupImg = popup.querySelector(".pp-img");
         /* activate loader until the popupImg loaded */
+        popup.querySelector(".pp-loader").classList.add("active");
         popupImg.src = imgSrc;
+        popupImg.onload = () =>{
+            // deactivate loader after the popupImg loaded
+            popup.querySelector(".pp-loader").classList.remove("active");
+        }
+        popup.querySelector(".pp-counter").innerHTML = (slideIndex+1) + " of " + screenshots.length;
     }
+
+    // next slide
+    nextBtn.addEventListener("click", () =>{
+        if(slideIndex === screenshots.length-1){
+            slideIndex = 0;
+        }
+        else{
+            slideIndex++;
+        }
+        popupSlideshow();
+    })
 
 })();
 /* End of Portfolio Filter and Popup */

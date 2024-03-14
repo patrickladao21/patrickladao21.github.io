@@ -64,9 +64,9 @@ function opentab(tabname){
     loop: true
 })
 
-function bodyScrollingToggle(){
-    document.body.classList.toggle("stop-scrolling");
-}
+//function bodyScrollingToggle(){
+   // document.body.classList.toggle("stop-scrolling");
+//}
 
 
 

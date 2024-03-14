@@ -751,8 +751,8 @@ section {
   z-index: 1000;
   overflow-y: scroll;
   max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
-  //opacity:0; /* Remove this to see the popup */
-  //visibility: hidden; /* Remove this to see the popup */
+  opacity:0; /* Remove this to see the popup */
+  visibility: hidden; /* Remove this to see the popup */
   transition: all 0.3s ease;
 }
 .portfolio-popup.open{
@@ -770,6 +770,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.portfolio-popup .pp-loader.active{
+  visibility: visible;
+  opacity:1;
 }
 .portfolio-popup .pp-loader div{
   height: 40px;
@@ -1033,10 +1039,10 @@ section {
   transform: rotate(180deg);
 }
 .portfolio-popup .pp-prev{
-  left: 15px;
+  left: 20px;
 }
 .portfolio-popup .pp-next{
-  right: 15px;
+  right: 40px;
 }
 /* End of Portfolio Popup */
 /* End of Portfolio Section */
