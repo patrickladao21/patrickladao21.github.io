@@ -33,7 +33,10 @@
             })
         }
     })
-    
+
+    portfolioItemsContainer.addEventListener("click", (event) =>{
+        console.log(event.target)
+    })
 
 })();
 /* End of Portfolio Filter and Popup */
