@@ -48,6 +48,14 @@ function bodyScrollingToggle(){
             screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
             //convert screenshots into array
             screenshots = screenshots.split(",");
+            if(screenshots.length === 1){
+                prevBtn.style.display = "none";
+                nextBtn.style.display = "none";
+            }
+            else{
+                prevBtn.style.display = "block";
+                nextBtn.style.display = "block";
+            }
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
