@@ -41,7 +41,9 @@
             const portfolioItems = Array.from(portfolioItem.parentElement.children)
                 .filter(item => item.classList.contains("portfolio-item"));
             itemIndex = portfolioItems.indexOf(portfolioItem);
-            console.log(itemIndex);
+            //console.log(itemIndex);
+            screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
+            console.log(screenshots)
         }
     });
 
