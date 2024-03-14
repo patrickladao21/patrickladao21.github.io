@@ -34,12 +34,16 @@
         }
     })
 
-    portfolioItemsContainer.addEventListener("click", (event) =>{
-        if(event.target.closest(".portfolio-item-inner")){
+    portfolioItemsContainer.addEventListener("click", (event) => {
+        if (event.target.closest(".portfolio-item-inner")) {
             const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
-            console.log(portfolioItem);
+            // Filter out unwanted elements and get the portfolioItem index
+            const portfolioItems = Array.from(portfolioItem.parentElement.children)
+                .filter(item => item.classList.contains("portfolio-item"));
+            itemIndex = portfolioItems.indexOf(portfolioItem);
+            console.log(itemIndex);
         }
-    })
+    });
 
 })();
 /* End of Portfolio Filter and Popup */
