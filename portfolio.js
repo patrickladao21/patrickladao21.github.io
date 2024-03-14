@@ -59,6 +59,7 @@ function bodyScrollingToggle(){
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
+           // popupDetails();
         }
     })
 
@@ -107,6 +108,19 @@ function bodyScrollingToggle(){
         popupSlideshow();
         console.log("slideIndex:" + slideIndex);
     })
+
+    projectDetailsBtn.addEventListener("click", () =>{
+        popupDetailsToggle();
+    })
+    function popupDetailsToggle(){
+        if(projectDetailsContainer.classList.contains("active")){
+            console.log("true");
+        }
+        else{
+            console.log("false");
+            // projectDetailsContainer.classList.add()
+        }
+    }
 
 })();
 /* End of Portfolio Filter and Popup */
