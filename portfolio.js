@@ -93,6 +93,19 @@ function bodyScrollingToggle(){
             slideIndex++;
         }
         popupSlideshow();
+        console.log("slideIndex:" + slideIndex);
+    })
+
+    // prev slide
+    prevBtn.addEventListener("click", () =>{
+        if(slideIndex === 0){
+            slideIndex = screenshots.length-1
+        }
+        else{
+            slideIndex--;
+        }
+        popupSlideshow();
+        console.log("slideIndex:" + slideIndex);
     })
 
 })();
