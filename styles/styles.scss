@@ -803,10 +803,14 @@ section {
   max-height: 55px; //You can adjust this
   overflow: hidden;
   opacity: 0;
+  transition: all 0.5s ease;
   //margin: auto;
 }
+.portfolio-popup .pp-details.active{
+  opacity: 1;
+}
 .portfolio-popup .pp-details-inner{
-  padding: 30px 0;
+  //padding: 30px 0;
 }
 .portfolio-popup .pp-title{
   font-family: "Poppins", sans-serif;
@@ -860,7 +864,7 @@ section {
   font-style: normal;
   //flex: 0 0 35%;
   //max-width: 35%;
-  padding: 0 15px;
+  padding: 0 19px;
 }
 .portfolio-popup .info ul li{
   display: block;
@@ -883,7 +887,7 @@ section {
   height: 1px;
   width: 100%;
   display: block;
-  margin-bottom: 1px;
+  //margin-bottom: 1px;
   //background-color: var(--color-grey-3);
   clear: both; /* Clear any floats */
 }
@@ -900,11 +904,12 @@ section {
   max-width: 1350px;
   width: 84%;
   margin-left: 8.5rem;
+  //margin-top: 0.05px;
   //margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  //overflow-y: auto;
   //max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
 }
 .portfolio-popup .pp-main-inner{
@@ -916,7 +921,9 @@ section {
   margin-right: 100rem;
   align-items: center;
   position: relative;
-  overflow-y: auto; /* Add this line */
+  overflow-y: auto;
+  //overflow-y: auto; /* Add this line */
+  transform: translateY(4rem); /* Move slightly downward */
   margin:auto;
   border-radius: 7px;
   //width: 500%; /* Set a percentage width or any other desired value */
@@ -937,6 +944,7 @@ section {
   line-height: 40px;
   transition: all 0.3s ease;
 }
+
 .portfolio-popup .pp-project-details-btn::after {
   content: '';
   width: 3%; /* Set initial width */

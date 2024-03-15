@@ -114,13 +114,15 @@ function bodyScrollingToggle(){
     })
     function popupDetailsToggle(){
         if(projectDetailsContainer.classList.contains("active")){
-            console.log("true");
+            projectDetailsContainer.classList.remove("active");
+            projectDetailsContainer.style.maxHeight = 0 + "px"
         }
         else{
-            console.log("false");
-            // projectDetailsContainer.classList.add()
+            projectDetailsContainer.classList.add("active");
+            projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
         }
     }
+    
 
 })();
 /* End of Portfolio Filter and Popup */
