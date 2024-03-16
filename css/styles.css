@@ -83,7 +83,7 @@ body .poppins-extrabold-italic {
   font-style: italic;
 }
 
-body.stop-scrolling {
+body.hidden-scrolling {
   overflow-y: hidden;
 }
 
@@ -748,7 +748,7 @@ section {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
-  padding: 0 15px;
+  padding: 30px 15px;
 }
 
 .portfolio-popup .pp-title h2 {
@@ -770,6 +770,7 @@ section {
 
 .portfolio-popup .pp-title p span {
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .portfolio-popup .pp-project-details h3 {
@@ -780,13 +781,21 @@ section {
   text-transform: capitalize;
 }
 
+.portfolio-popup .row1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 10px; /* Adjust the gap between columns */
+}
+
 .portfolio-popup .description {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: justify;
+  flex: 0 0 1%;
   max-width: 95%;
   padding: 0 15px;
+  width: 55rem; /* Adjust the width as needed */
 }
 
 .portfolio-popup .description p {
@@ -800,6 +809,7 @@ section {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-left: 5rem;
   padding: 0 19px;
 }
 
@@ -813,6 +823,11 @@ section {
 
 .portfolio-popup .info ul li span {
   font-weight: 400;
+  color: var(--color-grey-1);
+}
+
+.portfolio-popup .info ul li a {
+  color: #b54769;
 }
 
 .portfolio-popup .info ul li:last-child {
@@ -860,7 +875,7 @@ section {
   align-items: center;
   position: relative;
   overflow-y: auto;
-  transform: translateY(4rem); /* Move slightly downward */
+  transform: translateY(7rem); /* Move slightly downward */
   margin: auto;
   border-radius: 7px;
 }

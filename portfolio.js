@@ -1,5 +1,5 @@
 function bodyScrollingToggle(){
-    document.body.classList.toggle("stop-scrolling");
+    document.body.classList.toggle("hidden-scrolling");
 }
 /* Start of Portfolio Section */
 /* Start of Portfolio Filter and Popup */
@@ -59,12 +59,15 @@ function bodyScrollingToggle(){
             slideIndex = 0;
             popupToggle();
             popupSlideshow();
-           // popupDetails();
+            popupDetails();
         }
     })
 
     closeBtn.addEventListener("click", () =>{
         popupToggle();
+        if(projectDetailsContainer.classList.contains("active")){
+            popupDetailsToggle();
+        }
     })
 
     function popupToggle(){
@@ -94,7 +97,6 @@ function bodyScrollingToggle(){
             slideIndex++;
         }
         popupSlideshow();
-        console.log("slideIndex:" + slideIndex);
     })
 
     // prev slide
@@ -106,20 +108,45 @@ function bodyScrollingToggle(){
             slideIndex--;
         }
         popupSlideshow();
-        console.log("slideIndex:" + slideIndex);
     })
+
+    function popupDetails(){
+        // if portfolio-item-details not exists
+        if(!portfolioItems[itemIndex].querySelector(".portfolio-item-details")){
+            projectDetailsBtn.style.display="none";
+            return; /* end function execution */
+        }
+        projectDetailsBtn.style.display="block";
+        // get the project details
+        const details = portfolioItems[itemIndex].querySelector(".portfolio-item-details").innerHTML;
+        // set the project details
+        popup.querySelector(".pp-project-details").innerHTML = details;
+        // get the project title
+        const title = portfolioItems[itemIndex].querySelector(".portfolio-item-title").innerHTML;
+        // set the project title
+        popup.querySelector(".pp-title h2").innerHTML = title;
+        // get the data category
+        const category = portfolioItems[itemIndex].getAttribute("data-category");
+        // set the data category
+        popup.querySelector(".pp-project-category").innerHTML = category.split("-").join(" ");
+    }
 
     projectDetailsBtn.addEventListener("click", () =>{
         popupDetailsToggle();
     })
     function popupDetailsToggle(){
         if(projectDetailsContainer.classList.contains("active")){
+            projectDetailsBtn.querySelector("i").classList.remove("fa-minus");
+            projectDetailsBtn.querySelector("i").classList.add("fa-plus");
             projectDetailsContainer.classList.remove("active");
             projectDetailsContainer.style.maxHeight = 0 + "px"
         }
         else{
+            projectDetailsBtn.querySelector("i").classList.remove("fa-plus");
+            projectDetailsBtn.querySelector("i").classList.add("fa-minus");
             projectDetailsContainer.classList.add("active");
             projectDetailsContainer.style.maxHeight = projectDetailsContainer.scrollHeight + "px";
+            popup.scrollTo(0,projectDetailsContainer.offsetTop);
         }
     }
     
