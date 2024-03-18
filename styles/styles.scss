@@ -888,7 +888,7 @@ section {
   color: var(--color-grey-1);
 }
 .portfolio-popup .info ul li a{  
-  color: #b54769;  // This is the color of the source code
+  color: var(--color-hover);  // This is the color of the source code
 }
 .portfolio-popup .info ul li:last-child{
   margin-bottom:0;
@@ -1079,12 +1079,11 @@ section {
 
 #services .service-row{
   margin-top: 50px;
+  margin-left: 2rem;
+  margin-right: 5.8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 #services .service-row .service-box{
@@ -1100,12 +1099,45 @@ section {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--color-hover);
+  border: 2px solid #b54769;
   font-size: 22px;
   line-height: 46px;
   color: var(--color-white);
   transition: 0.7s;
   text-align: center;
+}
+
+#services .service-row .service-box .icon .code{
+  background-color: #95877A;
+}
+#services .service-row .service-box .icon .pal{
+  background-color: #b54769;
+}
+#services .service-row .service-box .icon .analysis{
+  background-color: #9aaf3e;
+}
+
+#services .service-row .service-box:hover{
+  color: var(--color-white);
+  background-color: var(--color-grey-4);
+  border-color: var(--color-grey-4);
+  transition: 0.4s;
+}
+
+#services .service-row .service-box .ser-info h4{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#services .service-row .service-box .ser-info h4 + p{
+  color: rgb(211, 209, 209);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
 }
 /* End of Services Section */ 
 
@@ -1281,6 +1313,26 @@ body::-webkit-scrollbar {
   }
 }
 /*End of the About Section */
+
+/* Start of Mobile View of Services Section */
+@media only screen and (max-width: 850px){
+  #services {
+    padding: 50px 15px;
+  }
+
+  #services .service-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #services .service-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+}
+/* End of Mobile View of Services Section */
 
 
 
