@@ -1090,6 +1090,7 @@ section {
   position: relative;
   width: 100%;
   height: 58px;
+  margin-top: 2rem;
 }
 
 .contact__input {
@@ -1101,6 +1102,26 @@ section {
   color: var(--color-grey-1);
   font-weight: 600;
   transition: border-color 0.4s, background-color 0.4s;
+}
+
+.contact__input:focus {
+  border-color: var(--color-grey-3);
+}
+
+.contact__input:-webkit-autofill {
+  transition: background-color 6000s, color 6000s;
+}
+
+.contact__label {
+  position: absolute;
+  top: -16px;
+  left: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-grey-3);
+  background-color: var(--color-primary);
+  padding: 8px;
+  transition: background-color 0.4s;
 }
 
 /* End of Contact Section */
