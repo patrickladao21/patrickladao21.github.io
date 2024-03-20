@@ -1129,6 +1129,10 @@ section {
   transition: background-color 0.4s;
 }
 
+.contact__area {
+  height: 10rem;
+}
+
 /* End of Contact Section */
 /* Scrollbar for the Header Section */
 /* Hide scrollbar by default */
