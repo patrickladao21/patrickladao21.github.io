@@ -1198,6 +1198,24 @@ section {
 .contact__area{
   height: 10rem;
 }
+
+.contact__area textarea{
+  resize: none;
+  padding-top: 1.25rem;
+}
+
+.contact__send{
+  padding-block: 1.25rem;
+  cursor: pointer;
+}
+
+.contact__message{
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  font-size: 14px;
+}
+
 /* End of Contact Section */
 
 /* Scrollbar for the Header Section */
