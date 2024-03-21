@@ -1391,10 +1391,10 @@ body::-webkit-scrollbar {
     margin-bottom: -2rem;
   }
   .main-title h2 {
-    font-size: 55px;
+    font-size: 40px;
   }
   .main-title h2 .bg-text {
-    font-size: 78px;
+    font-size: 55px;
   }
   .summary {
     padding: 0 1rem;
