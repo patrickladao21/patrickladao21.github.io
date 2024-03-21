@@ -111,6 +111,33 @@
         //padding: 2rem 2.5rem !important;
      //}
      /* End of About */
+    
+     /* Experience */
+        #experience{
+            //grid-template-columns: 1fr !important;
+            margin: 0 auto;
+            padding: 0 3rem;
+            padding-bottom: 6rem;
+            .main-title{
+                margin: 2rem auto;
+                margin-bottom: 2rem;
+                white-space: nowrap;
+                h2{
+                    font-size: 40px;
+                    .bg-text{
+                        font-size: 55px;
+                    }
+                }
+             }
+        }
+        .experiences{
+            grid-template-columns: 1fr !important;
+            padding-bottom: 6rem;
+            .experience .experience-text h4 {
+                font-size: 19px;
+            }
+        }
+     /* End of Experience */
     .controlls{
         position: fixed;
         top: auto;
@@ -121,7 +148,7 @@
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey-5);
-        //z-index: 999 !important; /* Ensure controlls appear above other content */
+        //z-index: 1 !important; /* Ensure controlls appear above other content */
         .control{
             //position: fixed;
             margin: 1rem .3rem; //1 rem is margin of top and bottom and .3rem is the margin of left and right.

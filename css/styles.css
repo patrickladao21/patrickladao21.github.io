@@ -1417,6 +1417,31 @@ body::-webkit-scrollbar {
     padding-right: 0;
   }
   /* End of About */
+  /* Experience */
+  #experience {
+    margin: 0 auto;
+    padding: 0 3rem;
+    padding-bottom: 6rem;
+  }
+  #experience .main-title {
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+  }
+  #experience .main-title h2 {
+    font-size: 40px;
+  }
+  #experience .main-title h2 .bg-text {
+    font-size: 55px;
+  }
+  .experiences {
+    grid-template-columns: 1fr !important;
+    padding-bottom: 6rem;
+  }
+  .experiences .experience .experience-text h4 {
+    font-size: 19px;
+  }
+  /* End of Experience */
   .controlls {
     position: fixed;
     top: auto;
