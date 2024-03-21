@@ -2,17 +2,50 @@
     header{
         padding: 0;
         overflow-y: auto !important;
+
+        /* Style the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px; /* Width of the scrollbar */
+        }
+
+        /* Track (the area on the side of the scrollbar) */
+        ::-webkit-scrollbar-track {
+            background: var(--color-grey-5); /* Background color of the track */
+        }
+
+        /* Handle (the draggable part of the scrollbar) */
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-grey-4); /* Color of the scrollbar thumb */
+            border-radius: 5px; /* Rounded corners of the scrollbar thumb */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-grey-4); /* Color of the scrollbar thumb on hover */
+        }
     }
     header .right-header{
         padding: 2rem !important;
     }
-
+    header .btn-con{
+        padding-left: 5.5rem !important;
+    }
+    header #socials-container{
+        padding-left: 5.5rem !important;
+        padding-bottom: 2rem;
+     }
     .controlls{
+        position: fixed;
         top: auto;
         bottom: 0;
         flex-direction: row;
         justify-content: center;
         left: 50%;
         transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        .control{
+            margin: 1rem .3rem; //I rem is margin of top and bottom and .3rem is the margin of left and right.
+        }
     }
 }

@@ -202,7 +202,7 @@ section {
   font-style: normal;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  overflow-y: hidden; /* Add this line to disable vertical scrollbar */
+  overflow-y: auto;
   height: 100%;
 }
 .header-content .left-header {
@@ -1333,16 +1333,46 @@ body::-webkit-scrollbar {
   header {
     padding: 0;
     overflow-y: auto !important;
+    /* Style the scrollbar */
+    /* Track (the area on the side of the scrollbar) */
+    /* Handle (the draggable part of the scrollbar) */
+    /* Handle on hover */
+  }
+  header ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  header ::-webkit-scrollbar-track {
+    background: var(--color-grey-5); /* Background color of the track */
+  }
+  header ::-webkit-scrollbar-thumb {
+    background: var(--color-grey-4); /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners of the scrollbar thumb */
+  }
+  header ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-grey-4); /* Color of the scrollbar thumb on hover */
   }
   header .right-header {
     padding: 2rem !important;
   }
+  header .btn-con {
+    padding-left: 5.5rem !important;
+  }
+  header #socials-container {
+    padding-left: 5.5rem !important;
+    padding-bottom: 2rem;
+  }
   .controlls {
+    position: fixed;
     top: auto;
     bottom: 0;
     flex-direction: row;
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .control {
+    margin: 1rem 0.3rem;
   }
 }
