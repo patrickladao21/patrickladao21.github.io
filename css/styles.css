@@ -388,7 +388,6 @@ section {
   font-style: normal;
   text-align: left;
   padding-right: 8rem;
-  text-align: justify;
 }
 
 .about-contents {
@@ -1202,28 +1201,26 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar */
 body::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
+  width: 10px;
 }
 
 @media (max-width: 768px) {
   /* Show scrollbar */
   body::-webkit-scrollbar {
-    width: 8px;
-    background: transparent;
+    width: 10px;
   }
   /* Style scrollbar track */
   body::-webkit-scrollbar-track {
-    background: transparent;
+    background: var(--color-grey-5);
   }
   /* Style scrollbar thumb */
   body::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
+    background: var(--color-grey-4);
+    border-radius: 5px;
   }
   /* Style scrollbar thumb on hover */
   body::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--color-grey-4);
   }
 }
 /*End of the Scrollbar for the About Section */
@@ -1232,11 +1229,6 @@ body::-webkit-scrollbar {
   .header-content {
     grid-template-columns: 1fr;
     padding: 3rem 1rem;
-  }
-  .left-header .image {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
   .right-header {
     padding-right: 1rem;
@@ -1329,7 +1321,7 @@ body::-webkit-scrollbar {
   }
 }
 /* End of Mobile View of Services Section */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 0;
     overflow-y: auto !important;
@@ -1354,13 +1346,77 @@ body::-webkit-scrollbar {
   header .right-header {
     padding: 2rem !important;
   }
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2.5rem !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
   header .btn-con {
-    padding-left: 5.5rem !important;
+    padding: 0 4rem;
+    margin: 0 auto;
+  }
+  header .main-btn {
+    width: 13rem;
   }
   header #socials-container {
-    padding-left: 5.5rem !important;
+    padding: 0 5rem;
     padding-bottom: 2rem;
+    margin: 1rem auto;
   }
+  /* About */
+  #about .container {
+    grid-template-columns: 1fr;
+  }
+  #about .container .about-col-1 {
+    grid-template-columns: 1fr;
+    margin-top: -5rem;
+    overflow-y: auto;
+  }
+  .main-title {
+    margin: -1rem auto;
+    margin-bottom: -2rem;
+  }
+  .main-title h2 {
+    font-size: 55px;
+  }
+  .main-title h2 .bg-text {
+    font-size: 78px;
+  }
+  .summary {
+    padding: 0 1rem;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .tab-titles {
+    padding: 0 1rem;
+    margin-top: 2rem !important;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .tab-contents {
+    padding: 0 1rem;
+    margin-top: 2rem !important;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .about-col-2 {
+    padding-right: 0;
+  }
+  /* End of About */
   .controlls {
     position: fixed;
     top: auto;

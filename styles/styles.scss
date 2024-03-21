@@ -434,7 +434,7 @@ section {
   font-style: normal;
   text-align: left;
   padding-right: 8rem;
-  text-align: justify; //Justify the content
+  //text-align: justify; //Justify the content
 }
 .about-contents{
   margin-top:3rem; //You can adjust this value depending on what you want
@@ -1275,32 +1275,33 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar */
 body::-webkit-scrollbar {
-  width: 0; // Set width to 0
-  background: transparent; // Set background color to transparent
+  width: 10px; // Set width to 0
+  //background: transparent; // Set background color to transparent
 }
 
 // For screens smaller than or equal to 768px (cellphones and tablets)
 @media (max-width: 768px) {
   /* Show scrollbar */
   body::-webkit-scrollbar {
-    width: 8px; // Set width to your desired width
-    background: transparent; // Set background color to transparent
+    width: 10px; // Set width to your desired width
+    //background: transparent; // Set background color to transparent
   }
 
   /* Style scrollbar track */
   body::-webkit-scrollbar-track {
-    background: transparent; // Set background color to transparent
+    background: var(--color-grey-5)
+    //background: transparent; // Set background color to transparent
   }
 
   /* Style scrollbar thumb */
   body::-webkit-scrollbar-thumb {
-    background: #888; // Set color of the scrollbar thumb
-    border-radius: 4px; // Set border radius
+    background: var(--color-grey-4); // Set color of the scrollbar thumb
+    border-radius: 5px; // Set border radius
   }
 
   /* Style scrollbar thumb on hover */
   body::-webkit-scrollbar-thumb:hover {
-    background: #555; // Set color of the scrollbar thumb on hover
+    background: var(--color-grey-4); // Set color of the scrollbar thumb on hover
   }
 }
 /*End of the Scrollbar for the About Section */
@@ -1313,13 +1314,13 @@ body::-webkit-scrollbar {
     padding: 3rem 1rem; // Adjust padding for header content
   }
 
-  .left-header {
-    .image {
-      width: 100%; // Make the image fill the entire width
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+  //.left-header {
+    //.image {
+     // width: 100%; // Make the image fill the entire width
+      //margin-left: auto;
+      //margin-right: auto;
+    //}
+  //}
 
   .right-header {
     padding-right: 1rem; // Adjust padding for right header

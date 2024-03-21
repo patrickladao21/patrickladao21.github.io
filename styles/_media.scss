@@ -1,4 +1,5 @@
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 768px){
     header{
         padding: 0;
         overflow-y: auto !important;
@@ -27,25 +28,104 @@
     header .right-header{
         padding: 2rem !important;
     }
+
+    .header-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+    
+    .left-header{
+        .h-shape{
+            display: none;
+        }
+    }
+
+    .right-header{
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto; //Center the content
+        .name{
+            font-size: 2.5rem !important;
+        }
+    }
+    .header-content .left-header .image{
+        margin: 0 auto; 
+        width: 90%;
+    }
     header .btn-con{
-        padding-left: 5.5rem !important;
+        padding: 0 4rem;
+        margin: 0 auto; //Center the content
+    }
+
+    header .main-btn{
+        width: 13rem;
     }
     header #socials-container{
-        padding-left: 5.5rem !important;
+        padding: 0 5rem;
         padding-bottom: 2rem;
+        margin: 1rem auto; //Center the content
      }
+
+     /* About */
+     #about .container{
+        grid-template-columns: 1fr;
+        .about-col-1{
+            grid-template-columns: 1fr;
+            margin-top: -5rem;
+            overflow-y: auto;
+        }
+     }
+     .main-title{
+        margin: -1rem auto;
+        margin-bottom: -2rem;
+        h2{
+            font-size: 55px;
+            .bg-text{
+                font-size: 78px;
+            }
+        }
+     }
+     .summary{
+        padding: 0 1rem;
+        margin: 0 auto;
+        font-size: 14px;
+     }
+     .tab-titles{
+        padding: 0 1rem;
+        margin-top: 2rem !important;
+        margin: 0 auto;
+        font-size: 14px;
+     }
+     .tab-contents{
+        padding: 0 1rem;
+        margin-top: 2rem !important;
+        margin: 0 auto;
+        font-size: 14px;
+     }
+
+     .about-col-2{
+        padding-right: 0;
+     }
+
+     //.section{
+        //padding: 2rem 2.5rem !important;
+     //}
+     /* End of About */
     .controlls{
         position: fixed;
         top: auto;
         bottom: 0;
-        flex-direction: row;
+        flex-direction:  row;
         justify-content: center;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey-5);
+        //z-index: 999 !important; /* Ensure controlls appear above other content */
         .control{
-            margin: 1rem .3rem; //I rem is margin of top and bottom and .3rem is the margin of left and right.
+            //position: fixed;
+            margin: 1rem .3rem; //1 rem is margin of top and bottom and .3rem is the margin of left and right.
         }
     }
 }
+
