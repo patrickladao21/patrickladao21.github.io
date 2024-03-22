@@ -855,13 +855,10 @@ section {
 }
 
 .portfolio-popup .pp-main {
-  min-height: 100vh;
   max-width: 1350px;
   width: 84%;
   margin-left: 8.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .portfolio-popup .pp-main-inner {
@@ -1508,6 +1505,70 @@ body::-webkit-scrollbar {
   #portfolio .container .row .portfolio-popup .info {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+  }
+  .portfolio-popup {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  .portfolio-popup .pp-main {
+    margin: 0 auto;
+    min-height: 4vh !important;
+    z-index: 3;
+  }
+  .portfolio-popup .pp-main .pp-main-inner {
+    margin: 0 auto !important;
+    padding-top: 5rem;
+    flex: 0 0 100% !important;
+    max-width: 90% !important;
+  }
+  .portfolio-popup .pp-main .pp-prev {
+    margin: 0 auto;
+  }
+  .portfolio-popup .separator {
+    display: none;
+  }
+  .portfolio-popup .pp-details {
+    margin: 0 auto !important;
+  }
+  .portfolio-popup .pp-details .pp-details-inner {
+    margin: 0 auto !important;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-title {
+    padding: 1rem 2rem;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-title h2 {
+    font-size: 23px;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details {
+    margin: 0 auto;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .description h3 {
+    padding-top: 0;
+    padding-left: 1rem;
+    font-size: 17px;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .description p {
+    padding-left: 1rem !important;
+    margin: 0 auto;
+    font-size: 12px;
+    z-index: 1;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .info {
+    margin-left: 0.1rem;
+    padding-left: 2rem !important; /* Adjust padding if necessary */
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .info h3 {
+    font-size: 17px;
+  }
+  .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .info ul li {
+    font-size: 12px;
+    z-index: 2;
   }
   /* End of Portfolio */
   .controlls {

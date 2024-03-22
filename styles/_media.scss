@@ -161,86 +161,181 @@
      /* End of Experience */
 
      /* Portfolio */
-     #portfolio{
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        //margin: 0 auto;
-        padding: 0 1rem !important;
-        padding-bottom: 6rem !important;
-
-        .container{
+        #portfolio{
             flex: 0 0 100% !important;
             max-width: 100% !important;
-            padding: 0 1rem;
             margin: 0 auto !important;
-        
-        //display: inline-block;
-        //display: flex;
-        //flex-wrap: wrap; /* Allow items to wrap to the next line */
-        //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-        //grid-template-columns: 1fr !important;
-        //gap: 20px; /* Adjust the gap between items as needed */
-            .portfolio-filter{
-                white-space: nowrap !important;
-                margin-left: -1rem !important;
-                //margin: 0 auto !important;
-                .filter-item{
-                    padding: 0 8px !important;
-                    font-size: 14px;
-                    //margin: 0 auto !important;
-                }
-            }
-            .row {
+            //margin: 0 auto;
+            padding: 0 1rem !important;
+            padding-bottom: 6rem !important;
+
+            .container{
                 flex: 0 0 100% !important;
                 max-width: 100% !important;
-                display: grid;
-                grid-template-columns: 1fr !important;
+                padding: 0 1rem;
+                margin: 0 auto !important;
+        
+                //display: inline-block;
+                //display: flex;
+                //flex-wrap: wrap; /* Allow items to wrap to the next line */
+                //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+                //grid-template-columns: 1fr !important;
+                //gap: 20px; /* Adjust the gap between items as needed */
+                .portfolio-filter{
+                    white-space: nowrap !important;
+                    margin-left: -1rem !important;
+                    //margin: 0 auto !important;
+                    .filter-item{
+                        padding: 0 8px !important;
+                        font-size: 14px;
+                        //margin: 0 auto !important;
+                    }
+                }
+                .row {
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                    display: grid;
+                    grid-template-columns: 1fr !important;
                 //display: flex !important;
                 //flex-direction: column !important;
                 //margin: 0 auto !important;
                 //align-items: center !important;
-                .portfolio-items{
-                    margin: 0 auto !important;
-                    flex: 0 0 100% !important;
-                    max-width: 100% !important;
+                    .portfolio-items{
+                        margin: 0 auto !important;
+                        flex: 0 0 100% !important;
+                        max-width: 100% !important;
                     //width: 60rem !important;
                     //display: flex !important;
                     //flex-direction: column !important;
                     //width: 100% !important;
                     //grid-template-columns: 1fr !important;
                     //gap: 20px !important; /* Adjust the gap between items as needed */
-                }
-                .portfolio-item {
-                    margin: 0 auto !important;
+                    }
+                    .portfolio-item {
+                        margin: 0 auto !important;
                     //width: calc(50% - 10px) !important;
                     //width: 100% !important; /* Ensure each item takes up full width */
-                    flex: 0 0 100% !important;
-                    max-width: 100% !important;
-                }   
-                .portfolio-item-inner{
-                    //width: 100%;
-                    //padding: 0 1rem;
-                    //margin-left: -5rem !important;
-                }
-                //@media (min-width: 768px) {
+                        flex: 0 0 100% !important;
+                        max-width: 100% !important;
+                    }   
+                    .portfolio-item-inner{
+                        //width: 100%;
+                        //padding: 0 1rem;
+                        //margin-left: -5rem !important;
+                    }
+                    //@media (min-width: 768px) {
                     /* Adjust the size of portfolio items for screen widths >= 768px */
                     //.portfolio-item {
                         //width: calc(50% - 10px); /* Adjust the width as needed */
                     //}
                 //}
-                .portfolio-popup .description{
-                    flex: 0 0 100% !important;
-                    max-width: 100% !important;
-                }
-                .portfolio-popup .info{
-                    flex: 0 0 100% !important;
-                    max-width: 100% !important;
+                    .portfolio-popup .description{
+                        flex: 0 0 100% !important;
+                        max-width: 100% !important;
+                    }
+                    .portfolio-popup .info{
+                        flex: 0 0 100% !important;
+                        max-width: 100% !important;
+                    }
                 }
             }
+
         }
+        .portfolio-popup{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin: 0 auto !important;
+            //padding-left: -50px !important;
+            .pp-main{
+                margin: 0 auto;
+                //padding-top: 5rem !important;
+                //width: 50%;
+                //padding: 5px;
+                min-height: 4vh !important;
+                z-index: 3;
+                //white-space: nowrap; /* Prevent text from wrapping */
+                //overflow: hidden; /* Hide overflowing content */
+                //overflow: hidden !important;
+//max-width: 200px;
+                .pp-main-inner{
+                    margin: 0 auto !important;
+                    padding-top: 5rem;
+                    //margin-left: 2%; // Adjust the margin as needed
+                    //margin-right: 2%; // Adjust the margin as needed
+                    flex: 0 0 100% !important;
+                    max-width: 90% !important;
+                }
+                .pp-prev{
+                    margin: 0 auto;
+                }
+            }
+            .separator{
+                display: none;
+            }
+            .pp-details{
+                margin: 0 auto !important;
+    
+                .pp-details-inner{
+                    //margin: 0 auto;
+                    .pp-title{
+                        padding: 1rem 2rem;
+                        h2{
+                            font-size: 23px;
+                        }
+                    }
+                    
+                    //grid-template-columns: 1fr !important;
+                    margin: 0 auto !important;
+                    .pp-project-details{
+                        margin: 0 auto;
+                        
+                        .row1{
+                            margin: 0 auto;
+                            display: flex;
+                            flex-direction: column;
+                            .description{
+                                h3{
+                                    padding-top: 0;
+                                    padding-left: 1rem;
+                                    font-size: 17px; 
+                                }
+                                p{
+                                    //padding: 0 2.5rem !important;
+                                    padding-left: 1rem !important;
+                                    margin: 0 auto;
+                                    //margin-top: -3rem;
+                                    font-size: 12px;
+                                    z-index: 1;
+                                }
+
+                            }
+                            .info{
+                                //margin-top: 1rem;
+                                //margin: 0 auto !important;
+                                margin-left: 0.1rem;
+                                padding-left: 2rem !important; /* Adjust padding if necessary */
+                                //display: flex !important;
+                                //flex-direction:  !important; 
+                                h3{
+                                    font-size: 17px;
+                                }
+                                ul li{
+                                    font-size: 12px;
+                                    z-index: 2;
+                                }
+                            }
+                            //grid-template-columns: 1fr !important;
+                        }
+
+                    }
+                }
+
+            }
+            
+        }
+    
         
-    }
+    
      
      /* End of Portfolio */
     .controlls{
@@ -260,6 +355,7 @@
         }
     }
 }
+
 
 
 
