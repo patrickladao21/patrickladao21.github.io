@@ -144,9 +144,9 @@
                 margin-bottom: 2rem;
                 white-space: nowrap;
                 h2{
-                    font-size: 35px;
+                    font-size: 30px;
                     .bg-text{
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                 }
              }
@@ -168,6 +168,17 @@
             //margin: 0 auto;
             padding: 0 1rem !important;
             padding-bottom: 6rem !important;
+            .main-title{
+                margin: 2rem auto;
+                margin-bottom: 2rem;
+                white-space: nowrap;
+                h2{
+                    font-size: 30px;
+                    .bg-text{
+                        font-size: 40px;
+                    }
+                }
+             }
 
             .container{
                 flex: 0 0 100% !important;
@@ -183,10 +194,11 @@
                 //gap: 20px; /* Adjust the gap between items as needed */
                 .portfolio-filter{
                     white-space: nowrap !important;
-                    margin-left: -1rem !important;
+                    margin-left: 0.1rem !important;
                     //margin: 0 auto !important;
                     .filter-item{
-                        padding: 0 8px !important;
+                        padding: 0 1px !important;
+                        margin: 0 5px;
                         font-size: 14px;
                         //margin: 0 auto !important;
                     }
@@ -219,6 +231,7 @@
                         max-width: 100% !important;
                     }   
                     .portfolio-item-inner{
+                        width: 100%;
                         //width: 100%;
                         //padding: 0 1rem;
                         //margin-left: -5rem !important;
@@ -266,7 +279,8 @@
                     max-width: 90% !important;
                 }
                 .pp-prev{
-                    margin: 0 auto;
+                    //margin-top: 20rem;
+                    //margin: 0 auto;
                 }
             }
             .separator{

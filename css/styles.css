@@ -1446,10 +1446,10 @@ body::-webkit-scrollbar {
     white-space: nowrap;
   }
   #experience .main-title h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
   #experience .main-title h2 .bg-text {
-    font-size: 50px;
+    font-size: 40px;
   }
   .experiences {
     grid-template-columns: 1fr !important;
@@ -1467,6 +1467,17 @@ body::-webkit-scrollbar {
     padding: 0 1rem !important;
     padding-bottom: 6rem !important;
   }
+  #portfolio .main-title {
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+  }
+  #portfolio .main-title h2 {
+    font-size: 30px;
+  }
+  #portfolio .main-title h2 .bg-text {
+    font-size: 40px;
+  }
   #portfolio .container {
     flex: 0 0 100% !important;
     max-width: 100% !important;
@@ -1475,10 +1486,11 @@ body::-webkit-scrollbar {
   }
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
-    margin-left: -1rem !important;
+    margin-left: 0.1rem !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
-    padding: 0 8px !important;
+    padding: 0 1px !important;
+    margin: 0 5px;
     font-size: 14px;
   }
   #portfolio .container .row {
@@ -1497,6 +1509,9 @@ body::-webkit-scrollbar {
     margin: 0 auto !important;
     flex: 0 0 100% !important;
     max-width: 100% !important;
+  }
+  #portfolio .container .row .portfolio-item-inner {
+    width: 100%;
   }
   #portfolio .container .row .portfolio-popup .description {
     flex: 0 0 100% !important;
@@ -1521,9 +1536,6 @@ body::-webkit-scrollbar {
     padding-top: 5rem;
     flex: 0 0 100% !important;
     max-width: 90% !important;
-  }
-  .portfolio-popup .pp-main .pp-prev {
-    margin: 0 auto;
   }
   .portfolio-popup .separator {
     display: none;
