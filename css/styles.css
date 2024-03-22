@@ -1537,6 +1537,12 @@ body::-webkit-scrollbar {
     flex: 0 0 100% !important;
     max-width: 90% !important;
   }
+  .portfolio-popup .pp-main .pp-prev {
+    margin-left: -1.1rem;
+  }
+  .portfolio-popup .pp-main .pp-next {
+    margin-right: -1.1rem;
+  }
   .portfolio-popup .separator {
     display: none;
   }
