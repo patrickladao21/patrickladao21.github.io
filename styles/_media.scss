@@ -1,4 +1,25 @@
-
+@media(max-width: 991px){
+    .portfolio-section .portfolio-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .controlls{
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        flex-direction:  row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+        //z-index: 1 !important; /* Ensure controlls appear above other content */
+        .control{
+            //position: fixed;
+            margin: 1rem .3rem; //1 rem is margin of top and bottom and .3rem is the margin of left and right.
+        }
+    }
+}
 @media screen and (max-width: 768px){
     header{
         padding: 0;
@@ -116,16 +137,16 @@
         #experience{
             //grid-template-columns: 1fr !important;
             margin: 0 auto;
-            padding: 0 3rem;
+            padding: 0 4rem;
             padding-bottom: 6rem;
             .main-title{
                 margin: 2rem auto;
                 margin-bottom: 2rem;
                 white-space: nowrap;
                 h2{
-                    font-size: 40px;
+                    font-size: 35px;
                     .bg-text{
-                        font-size: 55px;
+                        font-size: 50px;
                     }
                 }
              }
@@ -138,6 +159,90 @@
             }
         }
      /* End of Experience */
+
+     /* Portfolio */
+     #portfolio{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        //margin: 0 auto;
+        padding: 0 1rem !important;
+        padding-bottom: 6rem !important;
+
+        .container{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            padding: 0 1rem;
+            margin: 0 auto !important;
+        
+        //display: inline-block;
+        //display: flex;
+        //flex-wrap: wrap; /* Allow items to wrap to the next line */
+        //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        //grid-template-columns: 1fr !important;
+        //gap: 20px; /* Adjust the gap between items as needed */
+            .portfolio-filter{
+                white-space: nowrap !important;
+                margin-left: -1rem !important;
+                //margin: 0 auto !important;
+                .filter-item{
+                    padding: 0 8px !important;
+                    font-size: 14px;
+                    //margin: 0 auto !important;
+                }
+            }
+            .row {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+                display: grid;
+                grid-template-columns: 1fr !important;
+                //display: flex !important;
+                //flex-direction: column !important;
+                //margin: 0 auto !important;
+                //align-items: center !important;
+                .portfolio-items{
+                    margin: 0 auto !important;
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                    //width: 60rem !important;
+                    //display: flex !important;
+                    //flex-direction: column !important;
+                    //width: 100% !important;
+                    //grid-template-columns: 1fr !important;
+                    //gap: 20px !important; /* Adjust the gap between items as needed */
+                }
+                .portfolio-item {
+                    margin: 0 auto !important;
+                    //width: calc(50% - 10px) !important;
+                    //width: 100% !important; /* Ensure each item takes up full width */
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }   
+                .portfolio-item-inner{
+                    //width: 100%;
+                    //padding: 0 1rem;
+                    //margin-left: -5rem !important;
+                }
+                //@media (min-width: 768px) {
+                    /* Adjust the size of portfolio items for screen widths >= 768px */
+                    //.portfolio-item {
+                        //width: calc(50% - 10px); /* Adjust the width as needed */
+                    //}
+                //}
+                .portfolio-popup .description{
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }
+                .portfolio-popup .info{
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }
+            }
+        }
+        
+    }
+     
+     /* End of Portfolio */
     .controlls{
         position: fixed;
         top: auto;
@@ -155,4 +260,6 @@
         }
     }
 }
+
+
 
