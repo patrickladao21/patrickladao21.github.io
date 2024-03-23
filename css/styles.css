@@ -1527,6 +1527,7 @@ body::-webkit-scrollbar {
     margin: 0 auto !important;
   }
   .portfolio-popup {
+    overflow-x: hidden !important;
     flex: 0 0 100% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
