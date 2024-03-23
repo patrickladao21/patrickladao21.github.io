@@ -1468,7 +1468,7 @@ body::-webkit-scrollbar {
     padding-bottom: 6rem !important;
   }
   #portfolio .main-title {
-    margin: 2rem auto;
+    margin: 2rem auto !important;
     margin-bottom: 2rem;
     white-space: nowrap;
   }
@@ -1486,7 +1486,7 @@ body::-webkit-scrollbar {
   }
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
-    margin-left: 0.1rem !important;
+    margin: 0 auto !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
     padding: 0 1px !important;
@@ -1494,6 +1494,7 @@ body::-webkit-scrollbar {
     font-size: 14px;
   }
   #portfolio .container .row {
+    margin: 0 auto !important;
     flex: 0 0 100% !important;
     max-width: 100% !important;
     display: grid;
@@ -1511,15 +1512,18 @@ body::-webkit-scrollbar {
     max-width: 100% !important;
   }
   #portfolio .container .row .portfolio-item-inner {
+    margin: 0 auto !important;
     width: 100%;
   }
   #portfolio .container .row .portfolio-popup .description {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    margin: 0 auto !important;
   }
   #portfolio .container .row .portfolio-popup .info {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+    margin: 0 auto !important;
   }
   .portfolio-popup {
     flex: 0 0 100% !important;
@@ -1527,9 +1531,9 @@ body::-webkit-scrollbar {
     margin: 0 auto !important;
   }
   .portfolio-popup .pp-main {
-    margin: 0 auto;
-    min-height: 4vh !important;
+    min-height: 1vh !important;
     z-index: 3;
+    margin: -5rem auto !important;
   }
   .portfolio-popup .pp-main .pp-main-inner {
     margin: 0 auto !important;
@@ -1559,10 +1563,10 @@ body::-webkit-scrollbar {
     font-size: 23px;
   }
   .portfolio-popup .pp-details .pp-details-inner .pp-project-details {
-    margin: 0 auto;
+    margin: 0 auto !important;
   }
   .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 {
-    margin: 0 auto;
+    margin: 0 auto !important;
     display: flex;
     flex-direction: column;
   }
@@ -1573,7 +1577,7 @@ body::-webkit-scrollbar {
   }
   .portfolio-popup .pp-details .pp-details-inner .pp-project-details .row1 .description p {
     padding-left: 1rem !important;
-    margin: 0 auto;
+    min-height: 1vh !important;
     font-size: 12px;
     z-index: 1;
   }

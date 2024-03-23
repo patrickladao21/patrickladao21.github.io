@@ -169,7 +169,7 @@
             padding: 0 1rem !important;
             padding-bottom: 6rem !important;
             .main-title{
-                margin: 2rem auto;
+                margin: 2rem auto !important;
                 margin-bottom: 2rem;
                 white-space: nowrap;
                 h2{
@@ -194,8 +194,8 @@
                 //gap: 20px; /* Adjust the gap between items as needed */
                 .portfolio-filter{
                     white-space: nowrap !important;
-                    margin-left: 0.1rem !important;
-                    //margin: 0 auto !important;
+                    //margin-left: 0.1rem !important;
+                    margin: 0 auto !important;
                     .filter-item{
                         padding: 0 1px !important;
                         margin: 0 5px;
@@ -204,6 +204,7 @@
                     }
                 }
                 .row {
+                    margin: 0 auto !important;
                     flex: 0 0 100% !important;
                     max-width: 100% !important;
                     display: grid;
@@ -231,6 +232,7 @@
                         max-width: 100% !important;
                     }   
                     .portfolio-item-inner{
+                        margin: 0 auto !important;
                         width: 100%;
                         //width: 100%;
                         //padding: 0 1rem;
@@ -245,10 +247,12 @@
                     .portfolio-popup .description{
                         flex: 0 0 100% !important;
                         max-width: 100% !important;
+                        margin: 0 auto !important;
                     }
                     .portfolio-popup .info{
                         flex: 0 0 100% !important;
                         max-width: 100% !important;
+                        margin: 0 auto !important;
                     }
                 }
             }
@@ -260,12 +264,14 @@
             margin: 0 auto !important;
             //padding-left: -50px !important;
             .pp-main{
-                margin: 0 auto;
+                //margin: 0 auto;
                 //padding-top: 5rem !important;
                 //width: 50%;
                 //padding: 5px;
-                min-height: 4vh !important;
+                min-height: 1vh !important;
+                //max-height: 900rem;
                 z-index: 3;
+                margin: -5rem auto !important;
                 //white-space: nowrap; /* Prevent text from wrapping */
                 //overflow: hidden; /* Hide overflowing content */
                 //overflow: hidden !important;
@@ -282,6 +288,8 @@
                     //margin-top: 20rem;
                     //margin: 0 auto;
                     margin-left: -1.1rem;
+                    //padding-left: -50rem;
+                    //margin: 0 auto !important;
                     
                 }
                 .pp-next{
@@ -306,10 +314,10 @@
                     //grid-template-columns: 1fr !important;
                     margin: 0 auto !important;
                     .pp-project-details{
-                        margin: 0 auto;
+                        margin: 0 auto !important;
                         
                         .row1{
-                            margin: 0 auto;
+                            margin: 0 auto !important;
                             display: flex;
                             flex-direction: column;
                             .description{
@@ -321,7 +329,9 @@
                                 p{
                                     //padding: 0 2.5rem !important;
                                     padding-left: 1rem !important;
-                                    margin: 0 auto;
+                                    //margin: 0 auto;
+                                    //margin-bottom: -5rem !important;
+                                    min-height: 1vh !important;
                                     //margin-top: -3rem;
                                     font-size: 12px;
                                     z-index: 1;
