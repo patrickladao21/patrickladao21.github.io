@@ -1611,6 +1611,12 @@ body::-webkit-scrollbar {
     padding: 25px !important;
     width: 25rem;
   }
+  #services .ser-info h4 {
+    font-size: 18px !important;
+  }
+  #services .ser-info p {
+    font-size: 13px !important;
+  }
   /* End of Services */
   /* End of Portfolio */
   .controlls {
