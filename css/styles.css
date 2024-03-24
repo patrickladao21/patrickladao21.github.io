@@ -1606,6 +1606,11 @@ body::-webkit-scrollbar {
   #services .main-title h2 .bg-text {
     font-size: 40px;
   }
+  #services .service-box {
+    margin: 0 auto !important;
+    padding: 25px !important;
+    width: 25rem;
+  }
   /* End of Services */
   /* End of Portfolio */
   .controlls {
