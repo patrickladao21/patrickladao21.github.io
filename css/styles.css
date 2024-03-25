@@ -1614,9 +1614,9 @@ body::-webkit-scrollbar {
     gap: 2.5rem !important;
   }
   #services .service-box {
-    margin: 0 -1rem !important;
+    margin: 0 auto !important;
     padding: 25px !important;
-    width: 25rem;
+    width: 20rem;
   }
   #services .ser-info h4 {
     font-size: 18px !important;
