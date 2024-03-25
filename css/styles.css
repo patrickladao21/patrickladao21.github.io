@@ -1631,6 +1631,9 @@ body::-webkit-scrollbar {
   #contact .main-title h2 .bg-text {
     font-size: 40px;
   }
+  #contact .contact__send {
+    padding: 0.8rem !important;
+  }
   /* End of Contact */
   /* End of Portfolio */
   .controlls {
