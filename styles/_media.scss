@@ -370,7 +370,7 @@
         
         /* Services */
         #services{
-
+            margin: 0 auto !important;
             .main-title{
                 margin: 0 auto !important;
                 //margin-bottom: 2rem;
@@ -382,10 +382,17 @@
                     }
                 }
             }
+            .service-row{
+                display: flex !important;
+                flex-direction: column !important;
+                //grid-template-columns: 1fr !important;
+                gap: 2.5rem !important;
+            }
 
             .service-box{
-                margin: 0 auto !important;
+                margin: 0 -1rem !important;
                 padding: 25px !important;
+                //gap: 10rem !important;
                 width: 25rem;
             }
             .ser-info h4{

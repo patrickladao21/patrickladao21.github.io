@@ -1595,6 +1595,9 @@ body::-webkit-scrollbar {
     z-index: 2;
   }
   /* Services */
+  #services {
+    margin: 0 auto !important;
+  }
   #services .main-title {
     margin: 0 auto !important;
     white-space: nowrap;
@@ -1605,8 +1608,13 @@ body::-webkit-scrollbar {
   #services .main-title h2 .bg-text {
     font-size: 40px;
   }
+  #services .service-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+  }
   #services .service-box {
-    margin: 0 auto !important;
+    margin: 0 -1rem !important;
     padding: 25px !important;
     width: 25rem;
   }
