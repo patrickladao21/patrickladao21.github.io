@@ -1468,8 +1468,7 @@ body::-webkit-scrollbar {
     padding-bottom: 6rem !important;
   }
   #portfolio .main-title {
-    margin: 2rem auto !important;
-    margin-bottom: 2rem;
+    margin: 1.5rem auto !important;
     white-space: nowrap;
   }
   #portfolio .main-title h2 {
@@ -1596,8 +1595,7 @@ body::-webkit-scrollbar {
   }
   /* Services */
   #services .main-title {
-    margin: 2rem auto !important;
-    margin-bottom: 2rem;
+    margin: 0 auto !important;
     white-space: nowrap;
   }
   #services .main-title h2 {
@@ -1618,6 +1616,22 @@ body::-webkit-scrollbar {
     font-size: 13px !important;
   }
   /* End of Services */
+  /* Contact */
+  #contact {
+    margin: 0 auto !important;
+    padding: 3rem 4rem !important;
+  }
+  #contact .main-title {
+    margin: 0 auto !important;
+    white-space: nowrap;
+  }
+  #contact .main-title h2 {
+    font-size: 30px;
+  }
+  #contact .main-title h2 .bg-text {
+    font-size: 40px;
+  }
+  /* End of Contact */
   /* End of Portfolio */
   .controlls {
     position: fixed;
