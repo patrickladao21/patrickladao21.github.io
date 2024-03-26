@@ -1347,6 +1347,26 @@ body::-webkit-scrollbar {
     object-fit: cover;
     transition: all 0.4s ease-in-out;
   }
+  .header-content .right-header {
+    margin: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 7rem;
+  }
+  .header-content .right-header .name {
+    font-size: 3rem;
+  }
+  .header-content .right-header .name span {
+    color: var(--color-pink);
+  }
+  .header-content .right-header p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 1.5rem 0;
+    line-height: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
