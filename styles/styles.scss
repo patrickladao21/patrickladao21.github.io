@@ -103,7 +103,7 @@ a {
 }
 
 header {
-  min-height: 100vh; //Fix height of the header
+  height: 100vh; //Fix height of the header
   color: var(--color-white);
   overflow-y: auto; // Enable vertical scrolling
 }
