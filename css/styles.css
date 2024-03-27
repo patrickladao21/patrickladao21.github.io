@@ -1440,8 +1440,7 @@ body::-webkit-scrollbar {
     overflow-y: auto;
   }
   .main-title {
-    margin: -1rem auto;
-    margin-bottom: -2rem;
+    margin: 0 -9rem !important;
   }
   .main-title h2 {
     font-size: 40px;
