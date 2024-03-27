@@ -1373,6 +1373,15 @@ body::-webkit-scrollbar {
   #about .about-contents {
     margin: 1.8rem auto !important;
   }
+  #experience .main-title {
+    margin: 0 auto !important;
+  }
+  #experience .main-title h2 {
+    font-size: 3.2rem;
+  }
+  #experience .main-title .bg-text {
+    font-size: 4.9rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {

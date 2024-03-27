@@ -64,6 +64,7 @@
 
         
     }
+
     #about{
         .main-title{
             //margin: 0 10rem !important;
@@ -73,6 +74,20 @@
             margin: 1.8rem auto !important;
         }
     }
+
+    #experience{
+        .main-title{
+            margin: 0 auto !important;
+            h2{
+                font-size: 3.2rem;
+            }
+            .bg-text{
+                font-size: 4.9rem;
+            }
+            //margin-left: -4rem !important;
+        }
+    }
+
 
 }
 //@media(max-width: 991px){
