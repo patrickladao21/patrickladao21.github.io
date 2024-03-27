@@ -1368,7 +1368,10 @@ body::-webkit-scrollbar {
     line-height: 2rem;
   }
   #about .main-title {
-    margin-left: -8rem !important;
+    margin-left: -9rem !important;
+  }
+  #about .about-contents {
+    margin: 1.8rem auto !important;
   }
 }
 @media screen and (max-width: 768px) {
