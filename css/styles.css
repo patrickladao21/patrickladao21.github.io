@@ -1367,6 +1367,9 @@ body::-webkit-scrollbar {
     margin: 1.5rem 0;
     line-height: 2rem;
   }
+  #about .main-title {
+    margin-left: -8rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
