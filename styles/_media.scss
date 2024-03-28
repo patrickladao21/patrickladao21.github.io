@@ -86,6 +86,13 @@
             }
             //margin-left: -4rem !important;
         }
+        .experiences{
+            grid-template-columns: 1fr !important;
+            padding-bottom: 6rem;
+            .experience .experience-text h4 {
+                font-size: 19px;
+            }
+        }
     }
 
 
