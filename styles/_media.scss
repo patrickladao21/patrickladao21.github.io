@@ -95,6 +95,22 @@
         }
     }
 
+    #portfolio{
+        .main-title{
+            margin: 0 auto !important;
+            h2{
+                font-size: 3.2rem;
+            }
+            .bg-text{
+                font-size: 4.9rem;
+            }
+            //margin-left: -4rem !important;
+        }
+        .portfolio-filter{
+            padding-top: 2rem;
+        }
+    }
+
 
 }
 //@media(max-width: 991px){

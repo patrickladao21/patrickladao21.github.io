@@ -1389,6 +1389,18 @@ body::-webkit-scrollbar {
   #experience .experiences .experience .experience-text h4 {
     font-size: 19px;
   }
+  #portfolio .main-title {
+    margin: 0 auto !important;
+  }
+  #portfolio .main-title h2 {
+    font-size: 3.2rem;
+  }
+  #portfolio .main-title .bg-text {
+    font-size: 4.9rem;
+  }
+  #portfolio .portfolio-filter {
+    padding-top: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
