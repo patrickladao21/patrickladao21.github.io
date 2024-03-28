@@ -112,6 +112,7 @@
         .portfolio-items{
             display: grid;
             grid-template-columns: repeat(2, 1fr) !important;
+            margin-left: -3rem;
         }
     }
 

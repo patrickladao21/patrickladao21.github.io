@@ -1404,6 +1404,7 @@ body::-webkit-scrollbar {
   #portfolio .portfolio-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
+    margin-left: -3rem;
   }
 }
 @media screen and (max-width: 768px) {
