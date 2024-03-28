@@ -1406,6 +1406,9 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(2, 1fr) !important;
     margin-left: -3rem;
   }
+  .portfolio-popup .pp-main {
+    margin-left: 5rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
