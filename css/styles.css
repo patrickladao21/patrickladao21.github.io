@@ -1409,6 +1409,9 @@ body::-webkit-scrollbar {
   .portfolio-popup .pp-main {
     margin-left: 5rem !important;
   }
+  .portfolio-popup .pp-details {
+    margin-left: 4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
