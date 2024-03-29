@@ -118,9 +118,53 @@
     .portfolio-popup{
         .pp-main{
             margin-left: 5rem !important;
+            margin-top: 8rem;
+            z-index: 2 !important;
         }
+        
         .pp-details{
             margin-left: 5rem;
+            .pp-project-details{
+                //width: 3rem !important;
+                //display: grid;
+                //grid-template-columns: repeat(2, 1fr) !important;
+                .row1{
+                    gap: 2px !important;
+                    //width: 15rem !important;
+                    //right: -1rem !important;
+                    //left: -1rem !important;
+                    //gap: -10rem;
+                    //padding-right: -10rem !important;
+                    //margin-right: -10rem !important;
+                    display: flex;
+                    flex-direction: column;
+                    //display: grid;
+                    //grid-template-columns: repeat(2, 1fr) !important;
+                    
+                    .description{
+                        max-width: 95% !important;
+                        width: 55rem !important;
+                        //width: -10rem !important;
+                        p{
+                            
+                            //display: grid;
+                            //grid-template-columns: repeat(2, 1fr) !important;
+                            //width: 1rem !important;
+                            //margin-right: -1rem !important;
+                            //width: -2rem !important;
+                            //min-height: 80px;
+                            //margin-bottom: 5rem !important;
+                    
+                        }
+                        .info{
+                            z-index: 1 !important;
+                           // display: grid;
+                            //grid-template-columns: repeat(2, 1fr) !important;
+                            //margin-left: -10rem !important;
+                        }
+                    }
+                }
+            }
         }
     }
 

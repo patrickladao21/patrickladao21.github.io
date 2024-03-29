@@ -794,7 +794,7 @@ section {
   flex: 0 0 1%;
   max-width: 95%;
   padding: 0 15px;
-  width: 55rem; /* Adjust the width as needed */
+  width: 50rem; /* Adjust the width as needed */
 }
 
 .portfolio-popup .description p {
@@ -808,7 +808,6 @@ section {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  margin-left: 5rem;
   padding: 0 19px;
 }
 
@@ -1408,9 +1407,23 @@ body::-webkit-scrollbar {
   }
   .portfolio-popup .pp-main {
     margin-left: 5rem !important;
+    margin-top: 8rem;
+    z-index: 2 !important;
   }
   .portfolio-popup .pp-details {
     margin-left: 5rem;
+  }
+  .portfolio-popup .pp-details .pp-project-details .row1 {
+    gap: 2px !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-popup .pp-details .pp-project-details .row1 .description {
+    max-width: 95% !important;
+    width: 55rem !important;
+  }
+  .portfolio-popup .pp-details .pp-project-details .row1 .description .info {
+    z-index: 1 !important;
   }
 }
 @media screen and (max-width: 768px) {
