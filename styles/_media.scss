@@ -118,7 +118,7 @@
     .portfolio-popup{
         .pp-main{
             margin-left: 5rem !important;
-            //margin-top: 8rem;
+            //margin-top: 3rem;
             z-index: 2 !important;
         }
         
@@ -144,6 +144,7 @@
                     .description{
                         max-width: 95% !important;
                         width: 55rem !important;
+                        //margin-bottom: 1rem !important;
                         //width: -10rem !important;
                         p{
                             
@@ -158,6 +159,7 @@
                         }
                         .info{
                             z-index: 1 !important;
+                            //padding-top: 5rem !important;
                            // display: grid;
                             //grid-template-columns: repeat(2, 1fr) !important;
                             //margin-left: -10rem !important;
@@ -165,6 +167,19 @@
                     }
                 }
             }
+        }
+    }
+
+    #services{
+        .main-title{
+            margin: 0 auto !important;
+            h2{
+                font-size: 3.2rem;
+            }
+            .bg-text{
+                font-size: 4.9rem;
+            }
+            //margin-left: -4rem !important;
         }
     }
 

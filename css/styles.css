@@ -1424,6 +1424,15 @@ body::-webkit-scrollbar {
   .portfolio-popup .pp-details .pp-project-details .row1 .description .info {
     z-index: 1 !important;
   }
+  #services .main-title {
+    margin: 0 auto !important;
+  }
+  #services .main-title h2 {
+    font-size: 3.2rem;
+  }
+  #services .main-title .bg-text {
+    font-size: 4.9rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
