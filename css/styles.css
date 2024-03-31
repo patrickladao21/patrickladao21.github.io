@@ -1437,6 +1437,15 @@ body::-webkit-scrollbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  #contact .main-title {
+    margin: 0 auto !important;
+  }
+  #contact .main-title h2 {
+    font-size: 3.2rem;
+  }
+  #contact .main-title .bg-text {
+    font-size: 4.9rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
