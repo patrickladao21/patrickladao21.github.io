@@ -181,6 +181,10 @@
             }
             //margin-left: -4rem !important;
         }
+        .service-row{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
     }
 
 
