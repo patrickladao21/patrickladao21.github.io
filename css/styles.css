@@ -1451,8 +1451,9 @@ body::-webkit-scrollbar {
     font-size: 4.9rem;
   }
   #contact #contact-form {
-    margin: 0 auto !important;
-    width: 40rem; /* Adjust the width as needed */
+    width: 130%;
+    margin-left: -4rem;
+    /* Add padding to increase length on left and right equally */
   }
 }
 @media screen and (max-width: 768px) {

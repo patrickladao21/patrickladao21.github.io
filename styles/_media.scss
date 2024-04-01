@@ -203,9 +203,18 @@
             }
             //margin-left: -4rem !important;
         }
-        #contact-form{
-            margin: 0 auto !important;
-            width: 40rem; /* Adjust the width as needed */
+        #contact-form {
+            width: 130%;
+            margin-left: -4rem;
+            /* Add padding to increase length on left and right equally */
+            //padding: 0 -5px !important; /* Adjust as needed */
+        }
+        .contact__input{
+            //margin: 0 !important;
+            //margin-left: -1rem;
+            //width: 110%;
+            //padding: 0 1px !important;
+            
         }
     }
 
