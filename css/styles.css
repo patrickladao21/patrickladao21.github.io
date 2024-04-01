@@ -1450,6 +1450,10 @@ body::-webkit-scrollbar {
   #contact .main-title .bg-text {
     font-size: 4.9rem;
   }
+  #contact #contact-form {
+    margin: 0 auto !important;
+    width: 40rem; /* Adjust the width as needed */
+  }
 }
 @media screen and (max-width: 768px) {
   header {
