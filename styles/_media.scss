@@ -183,7 +183,12 @@
         }
         .service-row{
             display: grid;
-            grid-template-columns: repeat(2, 1fr) !important;
+            //grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-columns: 1fr !important;
+            .service-box{
+                margin: 0 auto !important;
+                width: 70%; 
+            }
         }
     }
 
