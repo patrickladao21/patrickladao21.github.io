@@ -1455,6 +1455,9 @@ body::-webkit-scrollbar {
     margin-left: -4rem;
     /* Add padding to increase length on left and right equally */
   }
+  #contact .contact__send {
+    padding: 0.85rem !important;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
