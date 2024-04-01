@@ -182,12 +182,13 @@
             //margin-left: -4rem !important;
         }
         .service-row{
+            //margin: 0 auto !important;
             display: grid;
             //grid-template-columns: repeat(2, 1fr) !important;
             grid-template-columns: 1fr !important;
             .service-box{
-                margin: 0 auto !important;
-                width: 70%; 
+                margin: 0 auto;
+                //width: 100%; 
             }
         }
     }
@@ -203,22 +204,7 @@
             }
             //margin-left: -4rem !important;
         }
-        #contact-form {
-            width: 130%;
-            margin-left: -4rem;
-            /* Add padding to increase length on left and right equally */
-            //padding: 0 -5px !important; /* Adjust as needed */
-        }
-        .contact__input{
-            //margin: 0 !important;
-            //margin-left: -1rem;
-            //width: 110%;
-            //padding: 0 1px !important;
-            
-        }
-        .contact__send{
-            padding: 0.85rem !important;
-        }
+        
     }
 
 
@@ -608,17 +594,19 @@
                 }
             }
             .service-row{
-                display: flex !important;
-                flex-direction: column !important;
-                //grid-template-columns: 1fr !important;
-                gap: 2.5rem !important;
+                margin: 2rem auto !important;
+                //display: flex !important;
+                //flex-direction: column !important;
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
             }
 
             .service-box{
                 margin: 0 auto !important;
                 padding: 25px !important;
                 //gap: 10rem !important;
-                width: 20rem;
+                width: 25rem;
             }
             .ser-info h4{
                 font-size: 18px !important;

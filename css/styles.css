@@ -1438,8 +1438,7 @@ body::-webkit-scrollbar {
     grid-template-columns: 1fr !important;
   }
   #services .service-row .service-box {
-    margin: 0 auto !important;
-    width: 70%;
+    margin: 0 auto;
   }
   #contact .main-title {
     margin: 0 auto !important;
@@ -1449,14 +1448,6 @@ body::-webkit-scrollbar {
   }
   #contact .main-title .bg-text {
     font-size: 4.9rem;
-  }
-  #contact #contact-form {
-    width: 130%;
-    margin-left: -4rem;
-    /* Add padding to increase length on left and right equally */
-  }
-  #contact .contact__send {
-    padding: 0.85rem !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1727,14 +1718,15 @@ body::-webkit-scrollbar {
     font-size: 40px;
   }
   #services .service-row {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2.5rem !important;
+    margin: 2rem auto !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
   }
   #services .service-box {
     margin: 0 auto !important;
     padding: 25px !important;
-    width: 20rem;
+    width: 25rem;
   }
   #services .ser-info h4 {
     font-size: 18px !important;
