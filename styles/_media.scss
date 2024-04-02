@@ -67,9 +67,20 @@
 
     #about{
         .main-title{
-            //margin: 0 10rem !important;
-            margin-left: -9rem !important;
+            //margin: 0 auto !important;
+            margin-left: -9rem;
+            h2{
+                font-size: 3.2rem;
+            }
+            .bg-text{
+                font-size: 4.9rem;
+            }
+            //margin-left: -4rem !important;
         }
+        //.main-title{
+            //margin: 0 10rem !important;
+           // margin-left: -9rem !important;
+        //}
         .about-contents{
             margin: 1.8rem auto !important;
         }

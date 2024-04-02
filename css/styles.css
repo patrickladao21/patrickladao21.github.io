@@ -1367,7 +1367,13 @@ body::-webkit-scrollbar {
     line-height: 2rem;
   }
   #about .main-title {
-    margin-left: -9rem !important;
+    margin-left: -9rem;
+  }
+  #about .main-title h2 {
+    font-size: 3.2rem;
+  }
+  #about .main-title .bg-text {
+    font-size: 4.9rem;
   }
   #about .about-contents {
     margin: 1.8rem auto !important;
