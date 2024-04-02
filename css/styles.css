@@ -1460,6 +1460,7 @@ body::-webkit-scrollbar {
   header {
     padding: 0;
     overflow-y: auto !important;
+    overflow-x: hidden !important;
     /* Style the scrollbar */
     /* Track (the area on the side of the scrollbar) */
     /* Handle (the draggable part of the scrollbar) */
@@ -1611,7 +1612,7 @@ body::-webkit-scrollbar {
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
     margin: 1rem !important;
-    margin-left: -2rem !important;
+    margin-left: -1rem !important;
     padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
@@ -1635,7 +1636,7 @@ body::-webkit-scrollbar {
   #portfolio .container .row .portfolio-item {
     margin: 0 -1rem !important;
     flex: 0 0 100% !important;
-    max-width: 92% !important;
+    max-width: 100% !important;
   }
   #portfolio .container .row .portfolio-item-inner {
     margin: 0 auto !important;
