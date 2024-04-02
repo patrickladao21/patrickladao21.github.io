@@ -1595,8 +1595,9 @@ body::-webkit-scrollbar {
   }
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
-    margin: 1rem auto !important;
-    padding: 0 1rem !important;
+    margin: 1rem !important;
+    margin-left: -2rem !important;
+    padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
     padding: 0 1px !important;
@@ -1617,9 +1618,9 @@ body::-webkit-scrollbar {
     max-width: 100% !important;
   }
   #portfolio .container .row .portfolio-item {
-    margin: 0 auto !important;
+    margin: 0 -1rem !important;
     flex: 0 0 100% !important;
-    max-width: 100% !important;
+    max-width: 92% !important;
   }
   #portfolio .container .row .portfolio-item-inner {
     margin: 0 auto !important;

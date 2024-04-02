@@ -407,8 +407,9 @@
                 .portfolio-filter{
                     white-space: nowrap !important;
                     //margin-left: 0.1rem !important;
-                    margin: 1rem auto !important;
-                    padding: 0 1rem !important;
+                    margin: 1rem !important;
+                    margin-left: -2rem !important;
+                    padding: 0  !important;
                     .filter-item{
                         padding: 0 1px !important;
                         margin: 0 5px;
@@ -438,13 +439,13 @@
                     //gap: 20px !important; /* Adjust the gap between items as needed */
                     }
                     .portfolio-item {
-                        margin: 0 auto !important;
+                        margin: 0 -1rem !important;
                     //width: calc(50% - 10px) !important;
                     //width: 100% !important; /* Ensure each item takes up full width */
                         flex: 0 0 100% !important;
                         //padding-left: 1.5rem;
                         //width: 300%;
-                        max-width: 100% !important;
+                        max-width: 92% !important;
                     }   
                     .portfolio-item-inner{
                         margin: 0 auto !important;
