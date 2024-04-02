@@ -259,6 +259,7 @@
     }
     header .right-header{
         padding: 2rem !important;
+        margin: 0 auto !important;
     }
 
     .header-content{
@@ -269,6 +270,12 @@
     .left-header{
         .h-shape{
             display: none;
+        }
+        .image{
+            margin: 0 auto !important;
+            //margin-left: 1rem !important;
+            width: 90% !important;
+            height: auto !important;
         }
     }
 
@@ -299,12 +306,16 @@
      }
 
      /* About */
+     #about{
+        overflow-x: hidden !important;
+     }
      #about .container{
         grid-template-columns: 1fr;
         .about-col-1{
             grid-template-columns: 1fr;
             margin-top: -5rem;
             overflow-y: auto;
+           // overflow-x: hidden !important;
         }
      }
      .main-title{

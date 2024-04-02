@@ -1474,6 +1474,7 @@ body::-webkit-scrollbar {
   }
   header .right-header {
     padding: 2rem !important;
+    margin: 0 auto !important;
   }
   .header-content {
     grid-template-columns: 1fr;
@@ -1481,6 +1482,11 @@ body::-webkit-scrollbar {
   }
   .left-header .h-shape {
     display: none;
+  }
+  .left-header .image {
+    margin: 0 auto !important;
+    width: 90% !important;
+    height: auto !important;
   }
   .right-header {
     grid-row: 1;
@@ -1507,6 +1513,9 @@ body::-webkit-scrollbar {
     margin: 1rem auto;
   }
   /* About */
+  #about {
+    overflow-x: hidden !important;
+  }
   #about .container {
     grid-template-columns: 1fr;
   }
