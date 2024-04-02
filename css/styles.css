@@ -1727,7 +1727,7 @@ body::-webkit-scrollbar {
   #services .service-box {
     margin: 0 auto !important;
     padding: 25px !important;
-    width: 25rem;
+    width: 23rem !important;
   }
   #services .ser-info h4 {
     font-size: 18px !important;
