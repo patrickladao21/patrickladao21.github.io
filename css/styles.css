@@ -347,6 +347,9 @@ section {
   padding: 80PX 1REM;
   color: var(--color-white);
 }
+#about .main-title {
+  margin-left: -15rem;
+}
 
 .row {
   display: flex;
@@ -1531,14 +1534,16 @@ body::-webkit-scrollbar {
     margin-top: -5rem;
     overflow-y: auto;
   }
-  .main-title {
-    margin: 0 -9rem !important;
+  #about .container .main-title {
+    margin: 2rem auto !important;
+    margin-bottom: 2rem;
+    white-space: nowrap;
   }
-  .main-title h2 {
-    font-size: 40px;
+  #about .container .main-title h2 {
+    font-size: 10px !important;
   }
-  .main-title h2 .bg-text {
-    font-size: 55px;
+  #about .container .main-title h2 .bg-text {
+    font-size: 20px !important;
   }
   .summary {
     padding: 0 1rem;
