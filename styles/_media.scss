@@ -435,7 +435,7 @@
                     white-space: nowrap !important;
                     //margin-left: 0.1rem !important;
                     margin: 1rem !important;
-                    margin-left: -1rem !important;
+                    margin-left: 0.5rem !important;
                     padding: 0  !important;
                     .filter-item{
                         padding: 0 1px !important;
@@ -468,7 +468,7 @@
                     .portfolio-item {
                         margin: 0 -1rem !important;
                     //width: calc(50% - 10px) !important;
-                    //width: 100% !important; /* Ensure each item takes up full width */
+                        //width: 100% !important; /* Ensure each item takes up full width */
                         flex: 0 0 100% !important;
                         //padding-left: 1.5rem;
                         //width: 300%;
@@ -476,7 +476,7 @@
                     }   
                     .portfolio-item-inner{
                         margin: 0 auto !important;
-                        width: 100%;
+                        width: 92%;
                         //width: 100%;
                         //padding: 0 1rem;
                         //margin-left: -5rem !important;

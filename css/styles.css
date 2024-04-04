@@ -1616,7 +1616,7 @@ body::-webkit-scrollbar {
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
     margin: 1rem !important;
-    margin-left: -1rem !important;
+    margin-left: 0.5rem !important;
     padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
@@ -1644,7 +1644,7 @@ body::-webkit-scrollbar {
   }
   #portfolio .container .row .portfolio-item-inner {
     margin: 0 auto !important;
-    width: 100%;
+    width: 92%;
   }
   #portfolio .container .row .portfolio-popup .description {
     flex: 0 0 100% !important;
