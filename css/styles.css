@@ -1535,19 +1535,18 @@ body::-webkit-scrollbar {
     overflow-y: auto;
   }
   #about .container .main-title {
-    margin: 2rem auto !important;
-    margin-bottom: 2rem;
+    margin: -1rem auto !important;
     white-space: nowrap;
   }
   #about .container .main-title h2 {
-    font-size: 10px !important;
+    font-size: 40px !important;
   }
   #about .container .main-title h2 .bg-text {
-    font-size: 20px !important;
+    font-size: 55px !important;
   }
   .summary {
-    padding: 0 1rem;
-    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
     font-size: 14px;
   }
   .tab-titles {
