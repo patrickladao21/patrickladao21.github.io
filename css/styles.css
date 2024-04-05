@@ -346,6 +346,7 @@ section {
   font-style: normal;
   padding: 80PX 1REM;
   color: var(--color-white);
+  overflow-y: auto !important;
 }
 #about .main-title {
   margin-left: -13rem;
