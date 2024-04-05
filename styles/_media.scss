@@ -246,7 +246,7 @@
     header{
         padding: 0;
         overflow-y: auto !important;
-        overflow-x: hidden !important;
+        //overflow-x: hidden !important;
 
         /* Style the scrollbar */
         ::-webkit-scrollbar {
@@ -297,7 +297,7 @@
         //margin: 0 1rem; //Center the content
         margin-left: 0.5rem !important;
         .name{
-            font-size: 2.5rem !important;
+            font-size: 2rem !important;
         }
     }
     .header-content .left-header .image{

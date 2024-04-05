@@ -1463,7 +1463,6 @@ body::-webkit-scrollbar {
   header {
     padding: 0;
     overflow-y: auto !important;
-    overflow-x: hidden !important;
     /* Style the scrollbar */
     /* Track (the area on the side of the scrollbar) */
     /* Handle (the draggable part of the scrollbar) */
@@ -1504,7 +1503,7 @@ body::-webkit-scrollbar {
     margin-left: 0.5rem !important;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
   .header-content .left-header .image {
     margin: 0 auto;
