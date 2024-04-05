@@ -1761,6 +1761,7 @@ body::-webkit-scrollbar {
   #contact {
     margin: 0 auto !important;
     padding: 3rem 3rem !important;
+    overflow-y: hidden !important;
   }
   #contact .main-title {
     margin: 0 auto !important;
