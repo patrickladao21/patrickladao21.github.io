@@ -320,7 +320,8 @@
 
      /* About */
      #about{
-        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        //overflow-x: hidden !important;
         
      }
      #about .container{
