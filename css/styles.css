@@ -1507,7 +1507,7 @@ body::-webkit-scrollbar {
     margin-left: 0.5rem !important;
   }
   .right-header .name {
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
   }
   .header-content .left-header .image {
     margin: 0 auto;
@@ -1616,7 +1616,7 @@ body::-webkit-scrollbar {
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
     margin: 1rem !important;
-    margin-left: 0.6rem !important;
+    margin-left: 0.2rem !important;
     padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
