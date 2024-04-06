@@ -1504,7 +1504,7 @@ body::-webkit-scrollbar {
     margin-left: 0.5rem !important;
   }
   .right-header .name {
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
   .header-content .left-header .image {
     margin: 0 auto;
@@ -1523,9 +1523,6 @@ body::-webkit-scrollbar {
     margin: 1rem auto;
   }
   /* About */
-  #about {
-    overflow-y: auto !important;
-  }
   #about .container {
     grid-template-columns: 1fr;
   }
