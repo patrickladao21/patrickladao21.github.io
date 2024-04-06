@@ -436,7 +436,7 @@
                     white-space: nowrap !important;
                     //margin-left: 0.1rem !important;
                     margin: 1rem !important;
-                    margin-left: 0.2rem !important;
+                    margin-left: 0.1rem !important;
                     padding: 0  !important;
                     .filter-item{
                         padding: 0 1px !important;
@@ -651,7 +651,8 @@
         #contact{
             margin: 0 auto !important;
             padding: 3rem 3rem !important;
-            overflow-y: hidden !important;
+            //overflow-y: hidden !important;
+            max-height: 100vh !important; /* Set maximum height to viewport height */
             .main-title{
                 margin: 0 auto !important;
                 //margin-bottom: 2rem;
