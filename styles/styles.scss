@@ -382,7 +382,7 @@ section {
   font-style: normal;
   padding: 80PX 1REM;
   color: var(--color-white);
-  overflow-y: auto !important;
+  //overflow-y: auto !important;
   .main-title{
     margin-left: -13rem;
   }
@@ -1151,6 +1151,9 @@ section {
 /* End of Services Section */ 
 
 /* Start of Contact Section */
+#contact{
+  overflow-y: hidden !important;
+}
 .contact__page{
   padding-block: 1rem 4rem;
 }
