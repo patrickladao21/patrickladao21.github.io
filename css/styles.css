@@ -1051,6 +1051,10 @@ section {
   background-color: #9aaf3e;
 }
 
+#services .service-row .service-box .icon .check {
+  background-color: #728cd4;
+}
+
 #services .service-row .service-box:hover {
   color: var(--color-white);
   background-color: var(--color-grey-4);
@@ -1748,7 +1752,7 @@ body::-webkit-scrollbar {
   #services .service-box {
     margin: 0 auto !important;
     padding: 25px !important;
-    width: 23rem !important;
+    width: 26rem !important;
   }
   #services .ser-info h4 {
     font-size: 18px !important;
