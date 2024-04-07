@@ -1616,7 +1616,7 @@ body::-webkit-scrollbar {
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
     margin: 1rem !important;
-    margin-left: 0.025rem !important;
+    margin-left: 0.001rem !important;
     padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
