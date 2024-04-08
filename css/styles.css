@@ -1620,7 +1620,7 @@ body::-webkit-scrollbar {
   #portfolio .container .portfolio-filter {
     white-space: nowrap !important;
     margin: 1rem !important;
-    margin-left: 0.001rem !important;
+    margin-left: -0.001rem !important;
     padding: 0 !important;
   }
   #portfolio .container .portfolio-filter .filter-item {
@@ -1752,7 +1752,7 @@ body::-webkit-scrollbar {
   #services .service-box {
     margin: 0 auto !important;
     padding: 25px !important;
-    width: 26rem !important;
+    width: 24rem !important;
   }
   #services .ser-info h4 {
     font-size: 18px !important;
