@@ -1765,6 +1765,7 @@ body::-webkit-scrollbar {
   #contact {
     margin: 0 auto !important;
     padding: 3rem 3rem !important;
+    overflow-y: hidden !important;
     max-height: 100vh !important; /* Set maximum height to viewport height */
   }
   #contact .main-title {
