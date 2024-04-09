@@ -1592,6 +1592,10 @@ body::-webkit-scrollbar {
     grid-template-columns: 1fr !important;
     padding-bottom: 6rem;
   }
+  .experiences .experience {
+    width: 110% !important;
+    margin-left: -1rem;
+  }
   .experiences .experience .experience-text h4 {
     font-size: 19px;
   }
