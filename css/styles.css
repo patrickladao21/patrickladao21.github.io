@@ -812,6 +812,7 @@ section {
   font-weight: 400;
   font-style: normal;
   padding: 0 19px;
+  max-width: 510px; /* Adjust as needed */
 }
 
 .portfolio-popup .info ul li {
@@ -820,7 +821,6 @@ section {
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
-  white-space: normal !important; /* Allow text to wrap */
 }
 
 .portfolio-popup .info ul li span {
@@ -838,7 +838,7 @@ section {
 
 .portfolio-popup .align-description-info {
   display: grid;
-  grid-template-columns: 60% 40%; /* Adjust as needed */
+  grid-template-columns: 50% 50%; /* Adjust as needed */
 }
 
 .portfolio-popup .separator {
@@ -869,7 +869,7 @@ section {
   width: 100%;
   padding: 70px 0 50px;
   margin-left: 0.5rem;
-  margin-top: 5rem; /* Adjust margin-top value to move it closer to .pp-details */
+  margin-top: 6rem; /* Adjust margin-top value to move it closer to .pp-details */
   margin-right: 100rem;
   align-items: center;
   position: relative;
