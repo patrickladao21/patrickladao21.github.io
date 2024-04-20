@@ -910,7 +910,7 @@ section {
 }
 .portfolio-popup .align-description-info {
   display: grid;
-  grid-template-columns: 50% 50%; /* Adjust as needed */
+  grid-template-columns: 60% 40% !important; /* Adjust as needed */
 }
 .portfolio-popup .separator{
   height: 1px;
