@@ -1056,6 +1056,10 @@ section {
   background-color: #728cd4;
 }
 
+#services .service-row .service-box .icon .teacher {
+  background-color: #ff8c69;
+}
+
 #services .service-row .service-box:hover {
   color: var(--color-white);
   background-color: var(--color-grey-4);
