@@ -1660,7 +1660,7 @@ body::-webkit-scrollbar {
   }
   #portfolio .container .row .portfolio-item-inner {
     margin: 0 auto !important;
-    width: 91.5%;
+    width: 95%;
   }
   #portfolio .container .row .portfolio-popup .description {
     flex: 0 0 100% !important;
