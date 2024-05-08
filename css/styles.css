@@ -1801,6 +1801,15 @@ body::-webkit-scrollbar {
   #contact .contact__send {
     padding: 0.8rem !important;
   }
+  #contact .email p {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-grey-1);
+  }
   /* End of Contact */
   /* End of Portfolio */
   .controlls {
