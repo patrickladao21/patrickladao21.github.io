@@ -363,7 +363,7 @@ section {
 }
 .about-col-1 img {
   width: 100%; /* Make image fill the entire width of its container */
-  border-radius: 15px; /* Add border radius to the image */
+  border-radius: 15px;
 }
 
 .about-col-1 img {
