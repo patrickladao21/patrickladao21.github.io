@@ -1249,26 +1249,6 @@ body::-webkit-scrollbar {
 }
 /*End of the Scrollbar for the About Section */
 /* Header Section */
-@media (max-width: 768px) {
-  .header-content {
-    grid-template-columns: 1fr;
-    padding: 3rem 1rem;
-  }
-  .right-header {
-    padding-right: 1rem;
-    padding-top: 1rem;
-    width: 100%;
-    text-align: center;
-  }
-  .name {
-    font-size: 0.7rem;
-    margin-bottom: 0.5rem;
-  }
-  .right-header > p {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-}
 /* End of the Header Section */
 /* About Section */
 /* For screens smaller than 768px (standard tablets and below) */

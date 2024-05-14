@@ -1323,11 +1323,11 @@ body::-webkit-scrollbar {
 
 /* Header Section */
 // For screens smaller than or equal to 768px (cellphones and tablets)
-@media (max-width: 768px) {
-  .header-content {
-    grid-template-columns: 1fr; // Change grid to single column layout
-    padding: 3rem 1rem; // Adjust padding for header content
-  }
+//@media (max-width: 768px) {
+  //.header-content {
+    //grid-template-columns: 1fr; // Change grid to single column layout
+    //padding: 3rem 1rem; // Adjust padding for header content
+  //}
 
   //.left-header {
     //.image {
@@ -1337,23 +1337,23 @@ body::-webkit-scrollbar {
     //}
   //}
 
-  .right-header {
-    padding-right: 1rem; // Adjust padding for right header
-    padding-top: 1rem; // Add top padding for better spacing
-    width: 100%; // Ensure the content takes full width
-    text-align: center; // Center-align the content
-  }
+  //.right-header {
+    //padding-right: 1rem; // Adjust padding for right header
+    //padding-top: 1rem; // Add top padding for better spacing
+    //width: 100%; // Ensure the content takes full width
+    //text-align: center; // Center-align the content
+  //}
 
-  .name {
-    font-size: 0.7rem; // Adjust font size for smaller screens
-    margin-bottom: 0.5rem; // Add margin to bottom for better spacing
-  }
+  //.name {
+    //font-size: 0.7rem; // Adjust font size for smaller screens
+    //margin-bottom: 0.5rem; // Add margin to bottom for better spacing
+  //}
 
-  .right-header > p {
-    font-size: 0.9rem; // Adjust font size for smaller screens
-    margin-bottom: 1rem; // Add margin to bottom for better spacing
-  }
-}
+  //.right-header > p {
+    //font-size: 0.9rem; // Adjust font size for smaller screens
+    //margin-bottom: 1rem; // Add margin to bottom for better spacing
+  //}
+//}
 /* End of the Header Section */
 
 
