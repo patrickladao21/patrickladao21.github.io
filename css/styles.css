@@ -1467,6 +1467,7 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 768px) {
   header {
     padding: 0;
+    overflow-y: auto !important;
     /* Style the scrollbar */
     /* Track (the area on the side of the scrollbar) */
     /* Handle (the draggable part of the scrollbar) */
