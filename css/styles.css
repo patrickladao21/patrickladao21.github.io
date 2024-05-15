@@ -1228,25 +1228,10 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 
-@media (max-width: 768px) {
-  /* Show scrollbar */
-  body::-webkit-scrollbar {
-    width: 10px;
-  }
-  /* Style scrollbar track */
-  body::-webkit-scrollbar-track {
-    background: var(--color-grey-5);
-  }
-  /* Style scrollbar thumb */
-  body::-webkit-scrollbar-thumb {
-    background: var(--color-grey-4);
-    border-radius: 5px;
-  }
-  /* Style scrollbar thumb on hover */
-  body::-webkit-scrollbar-thumb:hover {
-    background: var(--color-grey-4);
-  }
-}
+/* Show scrollbar */
+/* Style scrollbar track */
+/* Style scrollbar thumb */
+/* Style scrollbar thumb on hover */
 /*End of the Scrollbar for the About Section */
 /* Header Section */
 /* End of the Header Section */
