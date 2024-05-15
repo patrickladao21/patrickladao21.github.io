@@ -1189,45 +1189,15 @@ section {
 /* End of Contact Section */
 /* Scrollbar for the Header Section */
 /* Hide scrollbar by default */
-.header::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
 /* For screens smaller than or equal to 768px (cellphones and tablets) */
-@media (max-width: 768px) {
-  /* Show scrollbar */
-  .header::-webkit-scrollbar {
-    width: 8px;
-    background: transparent;
-  }
-  /* Style scrollbar track */
-  .header::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  /* Style scrollbar thumb */
-  .header::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-  }
-  /* Style scrollbar thumb on hover */
-  .header::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-}
+/* Show scrollbar */
+/* Style scrollbar track */
+/* Style scrollbar thumb */
+/* Style scrollbar thumb on hover */
 /* End of Scrollbar for the Header Section */
 /*Scrollbar for the About Section */
 /* Hide scrollbar by default */
-body::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-
 /* Hide scrollbar */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
 /* Show scrollbar */
 /* Style scrollbar track */
 /* Style scrollbar thumb */

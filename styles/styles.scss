@@ -1250,49 +1250,49 @@ section {
 
 /* Scrollbar for the Header Section */
 /* Hide scrollbar by default */
-.header::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
+//.header::-webkit-scrollbar {
+  //width: 0;
+  //background: transparent;
+//}
 
 /* For screens smaller than or equal to 768px (cellphones and tablets) */
-@media (max-width: 768px) {
+//@media (max-width: 768px) {
   /* Show scrollbar */
-  .header::-webkit-scrollbar {
-    width: 8px; // Set width to your desired width
-    background: transparent; // Set background color to transparent
-  }
+  //.header::-webkit-scrollbar {
+    //width: 8px; // Set width to your desired width
+    //background: transparent; // Set background color to transparent
+  //}
 
   /* Style scrollbar track */
-  .header::-webkit-scrollbar-track {
-    background: transparent; // Set background color to transparent
-  }
+  //.header::-webkit-scrollbar-track {
+    //background: transparent; // Set background color to transparent
+  //}
 
   /* Style scrollbar thumb */
-  .header::-webkit-scrollbar-thumb {
-    background: #888; // Set color of the scrollbar thumb
-    border-radius: 4px; // Set border radius
-  }
+  //.header::-webkit-scrollbar-thumb {
+    //background: #888; // Set color of the scrollbar thumb
+    //border-radius: 4px; // Set border radius
+  //}
 
   /* Style scrollbar thumb on hover */
-  .header::-webkit-scrollbar-thumb:hover {
-    background: #555; // Set color of the scrollbar thumb on hover
-  }
-}
+  //.header::-webkit-scrollbar-thumb:hover {
+    //background: #555; // Set color of the scrollbar thumb on hover
+  //}
+//}
 /* End of Scrollbar for the Header Section */
 
 /*Scrollbar for the About Section */
 /* Hide scrollbar by default */
-body::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
+//body::-webkit-scrollbar {
+  //width: 0;
+  //background: transparent;
+//}
 
 /* Hide scrollbar */
-body::-webkit-scrollbar {
-  width: 10px; // Set width to 0
+//body::-webkit-scrollbar {
+  //width: 10px; // Set width to 0
   //background: transparent; // Set background color to transparent
-}
+//}
 
 // For screens smaller than or equal to 768px (cellphones and tablets)
 //@media (max-width: 768px) {
