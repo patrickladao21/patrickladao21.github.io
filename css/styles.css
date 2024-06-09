@@ -1226,7 +1226,7 @@ body:hover::-webkit-scrollbar {
 
 /* Style scrollbar thumb on hover */
 body:hover::-webkit-scrollbar-thumb {
-  background-color: #555; /* Darken the scrollbar thumb on hover */
+  background-color: #454e56; /* Darken the scrollbar thumb on hover */
 }
 
 /* Show scrollbar */
