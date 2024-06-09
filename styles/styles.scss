@@ -1244,16 +1244,38 @@ section {
 
 /*Scrollbar for the About Section */
 /* Hide scrollbar by default */
-//body::-webkit-scrollbar {
-  //width: 0;
-  //background: transparent;
-//}
+body::-webkit-scrollbar {
+  width: 0; /* Initially hide scrollbar */
+  background: transparent; /* Make scrollbar background transparent */
+}
 
-/* Hide scrollbar */
-//body::-webkit-scrollbar {
-  //width: 10px; // Set width to 0
-  //background: transparent; // Set background color to transparent
-//}
+/* Style scrollbar when visible */
+body::-webkit-scrollbar {
+  width: 10px; /* Set the desired width */
+}
+
+/* Optional: Style the scrollbar thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Change color of the scrollbar thumb */
+  border-radius: 10px; /* Make the thumb rounded */
+}
+
+/* Optional: Style the scrollbar track (the background of the scrollbar) */
+body::-webkit-scrollbar-track {
+  background: #191d2b; /* Change the background color of the scrollbar track */
+  border-radius: 10px; /* Make the track rounded */
+}
+
+/* Optional: Style scrollbar on hover */
+body:hover::-webkit-scrollbar {
+  width: 10px; /* Show scrollbar on hover */
+}
+
+/* Style scrollbar thumb on hover */
+body:hover::-webkit-scrollbar-thumb {
+  background-color: #555; /* Darken the scrollbar thumb on hover */
+}
+
 
 // For screens smaller than or equal to 768px (cellphones and tablets)
 //@media (max-width: 768px) {
