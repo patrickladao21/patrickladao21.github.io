@@ -1209,7 +1209,7 @@ body::-webkit-scrollbar {
 
 /* Optional: Style the scrollbar thumb (the draggable part) */
 body::-webkit-scrollbar-thumb {
-  background-color: #888; /* Change color of the scrollbar thumb */
+  background-color: #454e56; /* Change color of the scrollbar thumb */
   border-radius: 10px; /* Make the thumb rounded */
 }
 
