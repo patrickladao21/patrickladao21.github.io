@@ -1621,7 +1621,6 @@ body:hover::-webkit-scrollbar-thumb {
     max-width: 100% !important;
     display: grid;
     grid-template-columns: 1fr !important;
-    /* Adjust the size of portfolio items for screen widths >= 768px */
   }
   #portfolio .container .row .portfolio-items {
     margin: 0 auto !important;
