@@ -579,7 +579,6 @@
         transform: translateX(-50%);
         width: 100%;
         background-color: var(--color-grey-5);
-        //z-index: 1 !important; /* Ensure controlls appear above other content */
         .control{
             //position: fixed;
             margin: 1rem .3rem; //1 rem is margin of top and bottom and .3rem is the margin of left and right.
