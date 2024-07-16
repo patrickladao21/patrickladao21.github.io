@@ -927,7 +927,7 @@ section {
   }
   .portfolio-popup .pp-project-details-btn:hover::after,
   .portfolio-popup .pp-project-details-btn:focus::after {
-    width: 32%; /* Slightly increase width on hover */
+    width: 32%;
   }
 }
 /* End of media Queries for the .pp-project-details-btn  */
