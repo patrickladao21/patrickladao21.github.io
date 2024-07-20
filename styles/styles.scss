@@ -213,7 +213,6 @@ section {
   font-style: normal;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  //overflow-y: hidden; /* Add this line to disable vertical scrollbar */
   overflow-y: auto;
   height: 100%;
   .left-header {
