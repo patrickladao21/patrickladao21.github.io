@@ -263,7 +263,7 @@ section {
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  z-index: 0; /* Ensure the button content stays above */
+  z-index: 0;
 }
 .main-btn .btn-text {
   padding: 0 2rem;
