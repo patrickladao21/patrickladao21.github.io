@@ -560,7 +560,7 @@ section {
 }
 
 .portfolio-item-inner {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-section .main-title {
