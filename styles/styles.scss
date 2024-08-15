@@ -734,7 +734,7 @@ section {
   min-height: 100vh;
   z-index: 1000;
   overflow-y: scroll;
-  max-height: calc(100vh - 120px); /* Calculate the maximum height */ /* You can disable this */
+  max-height: calc(100vh - 120px); 
   opacity:0; /* Remove this to see the popup */
   visibility: hidden; /* Remove this to see the popup */
   transition: all 0.3s ease;
