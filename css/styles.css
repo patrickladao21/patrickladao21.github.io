@@ -797,7 +797,7 @@ section {
   flex: 0 0 1%;
   max-width: 95%;
   padding: 0 15px;
-  width: 50rem; /* Adjust the width as needed */
+  width: 50rem;
 }
 
 .portfolio-popup .description p {
