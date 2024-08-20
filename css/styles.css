@@ -785,7 +785,7 @@ section {
 
 .portfolio-popup .row1 {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-template-columns: 1fr 1fr;
   gap: 10px; /* Adjust the gap between columns */
 }
 
