@@ -57,7 +57,7 @@ function opentab(tabname){
 
  //Typing effect on the header section
  let typed = new Typed('#auto-input', {
-    strings: ['Ira Clariz O. Lim'],
+    strings: ['Patrick Lance J. Ladao'],
     typeSpeed: 100,
     backSpeed: 90,
     backDelay: 100,
