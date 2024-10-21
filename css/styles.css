@@ -8,10 +8,10 @@
 :root {
   --color-primary: #191d2b;
   --color-secondary: #27ae60;
-  --color-hover: #ff0081;
+  --color-hover: #000080;
   --bg-opacity: rgba(255,255,255,0.5);
   --color-dark: #080808;
-  --color-pink: #ff004f;
+  --color-blue: #23297a;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -179,7 +179,7 @@ section {
 .controlls .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -234,7 +234,7 @@ section {
   font-size: 2.5rem;
 }
 .header-content .right-header .name span {
-  color: var(--color-pink);
+  color: var(--color-blue);
 }
 .header-content .right-header p {
   font-family: "Poppins", sans-serif;
@@ -256,7 +256,7 @@ section {
   font-weight: 600;
   position: relative;
   background-color: transparent;
-  border: 1px solid var(--color-pink);
+  border: 1px solid var(--color-blue);
   display: flex;
   align-self: flex-start;
   display: flex;
@@ -269,7 +269,7 @@ section {
   padding: 0 2rem;
 }
 .main-btn .btn-icon {
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +285,7 @@ section {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   transition: width 0.4s ease; /* Add transition for smooth width change */
   z-index: -1;
 }
@@ -293,7 +293,7 @@ section {
   background-color: transparent; /* Change the icon color to transparent on hover */
 }
 .main-btn:hover::before {
-  width: 100%; /* Spread out the pink color */
+  width: 100%; /* Spread out the blue color */
 }
 
 /* Socials Container */
@@ -323,7 +323,7 @@ section {
   font-family: "Poppins", sans-serif;
 }
 .main-title h2 span {
-  color: var(--color-pink);
+  color: var(--color-blue);
 }
 .main-title h2 .bg-text {
   position: absolute;
@@ -414,7 +414,7 @@ section {
   content: "";
   width: 0;
   height: 3px;
-  background: var(--color-pink);
+  background: var(--color-blue);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -527,7 +527,7 @@ section {
 .experiences .experience .experience-text {
   margin-top: -7px;
   padding: 1.1rem;
-  border-top: 8px solid var(--color-pink);
+  border-top: 8px solid var(--color-blue);
 }
 .experiences .experience .experience-text h4 {
   font-size: 1.5rem;
@@ -717,7 +717,7 @@ section {
 .portfolio-popup .pp-loader div {
   height: 40px;
   width: 40px;
-  border: 3px solid var(--color-pink);
+  border: 3px solid var(--color-blue);
   border-radius: 50%;
   border-right: 3px solid transparent;
   animation: spin 2s linear infinite;
@@ -899,7 +899,7 @@ section {
   content: "";
   width: 3%; /* Set initial width */
   height: 3px;
-  background: var(--color-pink);
+  background: var(--color-blue);
   position: absolute;
   bottom: -3px;
   left: 17px;
@@ -947,7 +947,7 @@ section {
 }
 
 .portfolio-popup .pp-close:hover {
-  color: var(--color-pink); /* Change color to pink on hover */
+  color: var(--color-blue); /* Change color to blue on hover */
 }
 
 .portfolio-popup .pp-close:after {
@@ -1166,10 +1166,10 @@ section {
   cursor: pointer;
   margin-top: 1.5rem;
   padding: 1rem;
-  border: 1px solid var(--color-pink);
+  border: 1px solid var(--color-blue);
   color: var(--color-white);
   border-radius: 5px;
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1351,7 +1351,7 @@ body:hover::-webkit-scrollbar-thumb {
     font-size: 3rem;
   }
   .header-content .right-header .name span {
-    color: var(--color-pink);
+    color: var(--color-blue);
   }
   .header-content .right-header p {
     font-family: "Poppins", sans-serif;
