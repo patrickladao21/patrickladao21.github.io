@@ -346,10 +346,6 @@ section {
   font-style: normal;
   padding: 80PX 1REM;
   color: var(--color-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 #about .main-title {
   margin-left: -13rem;
@@ -1268,7 +1264,8 @@ body:hover::-webkit-scrollbar-thumb {
   }
   .about-col-1 {
     flex-basis: 100%; /* Set full width for smaller screens */
-    margin-bottom: 2rem; /* Add margin to separate image from text */
+    margin-bottom: 5rem; /* Add margin to separate image from text */
+    margin-top: 5rem;
   }
   .about-col-1 img {
     width: 100%; /* Make image fill the entire width of its container */
