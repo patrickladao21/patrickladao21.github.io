@@ -346,6 +346,10 @@ section {
   font-style: normal;
   padding: 80PX 1REM;
   color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #about .main-title {
   margin-left: -13rem;
